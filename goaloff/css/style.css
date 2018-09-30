@@ -1,0 +1,943 @@
+@font-face {
+    font-family: "Panton-BlackCaps";
+    src: url("../fonts/Panton-BlackCaps.otf");
+}
+
+@font-face {
+    font-family: "Opensans Semibold", sans-serif;
+    src: url('../fonts/Opensans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans.ttf');
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+body{
+  background-color: #E1E1E1;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden; /*убираем горизонтальный скролл*/
+  position: relative;
+}
+
+.footer{
+  margin-top: -1rem;
+  position: relative;
+}
+
+.empty{
+  height: 1rem;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+ul > li{
+    list-style: none;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #ffffff;
+}
+
+.slider__wrapper{
+	width: 100px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.slider{
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+.slide{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	list-style: none;
+}
+li.active{
+	position: relative;
+	z-index: 1;
+}
+.inslide{
+	z-index: 2;
+}
+
+/*Header*/
+.block__logo,
+.block__menu{
+    display: inline-block;
+}
+
+.block__logo{
+    width: 20%;
+}
+
+/*Menu*/
+.block__menu{
+    width: 79%;
+    vertical-align: top;
+    padding: 2rem 0;
+	text-align: center;
+}
+
+.logo-link{
+	display: inline-block;
+	width: 100%;
+}
+
+.logo-link > .logo{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.menu__item{
+	position: relative;
+    display: inline-block;
+}
+
+.menu__link{
+    display: block;
+    padding: 2rem;
+}
+
+.menu__text{
+    font: 18px "Panton-BlackCaps",sans-serif;
+    text-transform: uppercase;
+    color: #188A19;
+}
+
+/*Submenu*/
+.menu__item:hover > .submenu__list{
+	display: block;
+}
+.active{
+	color: red;
+}
+
+.submenu__list{
+	display: none;
+	position: absolute;
+	width: 140px;
+	top: 80%;
+	/*left: 0%;*/
+	background-color: #188A19; /*Заменить*/
+	padding: 0 0 2rem 0.9rem;
+	z-index: 1;
+}
+
+.submenu__link{
+	display: block;
+	padding: 1rem 0 0 0;
+	text-decoration: none;
+}
+
+.submenu__text{
+	font: 1.4rem "Panton-BlackCaps",sans-serif;
+	color: #ffffff; /*Заменить*/
+	text-transform: uppercase;
+}
+
+.submenu__text:last-child{
+	padding-bottom: 2rem;
+}
+/*Live*/
+
+/*.block__online{
+	background-color: #EDEEF0;
+}*/
+.block__online{
+	width: 59%;
+	margin: 0 auto;
+}
+
+.block__online__wrapper{
+	padding-bottom: 1%;
+}
+
+.tournament__info,
+.block__online--title{
+	margin: 0 auto;
+}
+
+.tournament--name{
+	font: bold 1.4rem "Open Sans", sans-serif;
+	padding-left: 2%;
+}
+
+.championat__online{
+	position: relative;
+	margin: 0 auto;
+	vertical-align: top;
+	background-color: #EDEEF0;
+}
+
+.tournament__info--country{
+	width: 2%;
+}
+/*
+.championat__online{
+	display: inline-block;
+	position: relative;
+	width: 48%;
+}
+*/
+.championat__online > .championat__online--teams{
+	padding-left: 2%;
+}
+
+.championat__online > .championat__online--score{
+	position: absolute;
+	right: 40%;
+	font-weight: bold;
+}
+
+.championat__online > .championat__online--status{
+	position: absolute;
+	right: 0.2rem;
+	font-style: italic;
+}
+
+.live-text{
+	font: 1.4rem "Open Sans", sans-serif;
+}
+
+/*Content*/
+.block__content__wrapper{
+    margin: 0.5rem 0;
+}
+
+.block__left{
+    display: inline-block;
+    width: 20%;
+    background-color: #EDEEF0;
+}
+
+.block__left__news{
+    display: inline-block;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid #161719;
+}
+
+.block__left__news-last{
+    border: none;
+}
+
+.block__left__news > *{
+    font-size: 1.4rem;
+}
+
+.block__left__news-time{
+    display: inline-block;
+	font-weight: bold;
+}
+
+.block__left__news-title{
+    font: 1.4rem "Open Sans", sans-serif;
+    color: #132112;
+}
+
+.block__left__news-title--main{
+    font-weight: bold;
+}
+
+.block__left__news-foto{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.block__left__news-foto > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.block__center{
+    display: inline-block;
+    width: 59%;
+	vertical-align: top;
+}
+
+.block__center__article,
+.block__center__news,
+.block__center__allnews,
+.block__center__allArticles,
+.block__center__championat,
+.block__center__matchInfo,
+.block__center__championat-team,
+.block__center__championat-team-player,
+.block__center__cup,
+.block__center__transfers,
+.block__contacts{
+	display: inline-block;
+	width: 100%;
+	padding: 0 1rem 1rem;
+	margin-bottom: 1rem;
+	background-color: #EDEEF0;
+	text-align: justify;
+}
+
+.block__center__article--foto{
+	display: block;
+	width: 43%;
+	float: left;
+	padding-right: 1rem;
+}
+
+.block__center__article--title{
+	display: inline-block;
+	color: #161719;
+}
+
+.block__center__article--title:hover{
+	color: #5a5656;
+}
+
+.block__center__article--title__wrapper,
+.block__center__news--title__wrapper{
+	display: inline-block;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.block__center__article--text,
+.block__center__allnews--text,
+.block__center__allArticles--text{
+	position: relative;
+	width: 100%;
+	word-wrap: break-word;
+	font: 1.4rem "Open Sans", sans-serif;
+    color: #161719;
+	text-align: justify;
+}
+
+.block__center__article--text-detail{
+	position: absolute;
+	right: 0;
+	bottom: -1rem;
+}
+
+.block__center__article--text-detail > a{
+	color: #161719;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.block__right{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+/*News*/
+
+.news-description{
+	display: inline-block;
+	padding-bottom: 1rem;
+	font: italic 1.4rem "Open Sans", sans-serif;
+	text-align: justify;
+}
+
+.news-question{
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+.news-answer{
+	font-size: 1.4rem;
+	padding: 1rem 0;
+}
+
+.block__center__news--foto{
+	display: block;
+	width: 20%;
+	float: left;
+	padding-right: 1rem;
+}
+
+.block__center__news--title__wrapper > h1{
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*All news*/
+
+.block__center__allnews,
+.block__center__allArticles{
+	width: 100%;
+}
+
+.block__center__allnews--info__wrapper,
+.block__center__allArticles--info__wrapper{
+	padding-bottom: 1rem;
+	text-align: justify;
+}
+
+.block__center__allnews-date,
+.block__center__allArticles-date{
+	font: bold 1.4rem "Open Sans", sans-serif;
+}
+
+.block__center__allnews--text,
+.block__center__allArticles--text{
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.block__center__allnews--title__wrapper > h1,
+.block__center__allArticles--title__wrapper > h1{
+	text-transform: uppercase;
+}
+
+.block__center__allnews__pagination,
+.block__center__allArticles__pagination{
+	width: 100%;
+}
+
+.block__center__allnews__pagination__wrapper,
+.block__center__allArticles__pagination__wrapper{
+	display: table;
+	margin: 0 auto;
+}
+
+.block__center__allnews__pagination__wrapper > a,
+.block__center__allArticles__pagination__wrapper > a{
+	padding: 1rem;
+	font: bold 1.4rem "Open Sans", sans-serif;
+	color: #161719;
+}
+
+/*Article*/
+
+.article-preview{
+	font: bold 1.4rem "Open Sans", sans-serif;
+	padding-bottom: 1rem;
+}
+
+.article-absaz{
+	font: 1.4rem "Open Sans", sans-serif;
+	text-align: justify;
+	padding-bottom: 1rem;
+}
+
+.article-author{
+	float: right;
+	font: bold 1.4rem "Open Sans", sans-serif;
+}
+
+/*Accordeon*/
+.accordeon{
+	width: 100%;
+}
+
+.accordeon > li{
+	list-style: none;
+}
+
+.accordeon-item{
+	background-color: #EDEEF0;
+	margin-bottom: 0.2rem;
+}
+
+.accordeon > a{
+	text-decoration: none;
+}
+
+.accordeon__trigger,
+.block__online--title{
+	display: block;
+	padding: 0.5rem;
+	color: #161719;
+	font: bold 1.4rem "Open Sans", sans-serif;
+	text-transform: uppercase;
+}
+
+.accordeon__inner{
+	display: none;
+}
+
+.accordeon__inner-link{
+	color: #161719;
+}
+
+.championat__archive{
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #161719;
+}
+
+/*Currenr tour*/
+
+.championat-current-tour{
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.championat-current-tour--title{
+	font: bold 2rem "Open Sans", sans-serif;
+	text-align: center;
+}
+
+.championat-current-tour__wrapper{
+	width: 100%;
+}
+
+.championat-current-tour__game{
+	font: 1.4rem "Open Sans", sans-serif;
+}
+
+.championat-current-tour--score{
+	position: absolute;
+	right: 30%;
+}
+
+.championat-current-tour--info{
+	font-weight: bold;
+	float: right;
+	color: #161719;
+}
+
+/*MatchInfo*/
+.matchInfo-teams{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.matchInfo-title{
+  font: bold 2rem "Open Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.matchInfo-preview{
+	font: italic bold 1.2rem "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.matchInfo-judge{
+  display: block;
+}
+
+.matchInfo-goals{
+  font: bold 1.6rem "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.goals-authors{
+  margin-right: 0.5rem;
+    font-style: normal;
+}
+
+.matchInfo-teamsHoz,
+.divide,
+.matchInfo-teamsGast{
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+	text-align: left;
+	font: 1.6rem "Open Sans", sans-serif;
+	margin-top: 2rem;
+}
+
+.subtitution-icon{
+  position: relative;
+  width: 1.5rem;
+  top: 0.1rem;
+  left: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.punishment{
+  display: none;
+}
+
+.subtitutions,
+.punishment{
+  margin-top: 2rem;
+}
+
+.subtitution-time,
+.punishment-time{
+  font: bold 1.4rem "Open Sans", sans-serif;
+}
+
+.subtitution-title,
+.punishment-title{
+  font: bold 1.6rem "Open Sans", sans-serif;
+}
+
+.yellow-card,
+.red-card{
+  display: inline-block;
+  position: relative;
+  width: 1.7rem;
+  height: 2rem;
+  background-color: yellow;
+  font: bold 1.3rem "Open Sans", sans-serif;
+  top: -1px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.red-card{
+  background-color: red;
+}
+
+.divide{
+  width: 0.1rem;
+  height: 25rem;
+  background-color: #161719;
+  margin: 2rem 2% 0;
+}
+
+/*Table*/
+.block__right__table{
+	width: 100%;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.table-bold{
+	font-weight: bold;
+}
+
+tr{
+	border: 1px solid #161719;
+}
+
+td{
+	width: 2.5rem;
+	text-align: center;
+	font: 1.4rem "Open Sans", sans-serif;
+	border-right: 0.1rem solid #161719;
+	color: #161719;
+}
+
+.block__center__championat-name{
+	display: table;
+	font: bold 2rem "Open Sans", sans-serif;
+	text-transform: uppercase;
+	margin: 1rem auto;
+}
+
+.championat__table,
+.championat-team__table{
+	margin: 1rem auto;
+}
+
+.table-place{
+	font-weight: bold;
+}
+
+.table-team{
+	width: 15rem;
+	text-align: left;
+}
+
+.table-team-center{
+	width: 60%;
+}
+
+.goalscorers{
+	width: 100%;
+}
+
+.goalscorers  > tbody > tr{
+	margin-top: 1rem;
+}
+
+.goalscorers > tbody > tr,
+.goalscorers > tbody > tr > td{
+	border: none;
+}
+
+.table-balls-count{
+	width: 10%;
+	font-weight: bold;
+}
+
+.table-name{
+	width: 70%;
+	text-align: left;
+}
+
+.all{
+	position: relative;
+	text-align: right;
+	background-color: #ffffff;
+}
+
+.all > .all-text > a{
+	text-decoration: underline;
+	color: #161719;
+	font: bold 1.6rem "Open Sans", sans-serif;
+	text-transform: uppercase;
+}
+
+/*Championat-team*/
+
+.championat-team,
+.team-player-name-link{
+	color: #161719;
+}
+
+.team__name__logo{
+	display: table;
+	margin: 1rem auto;
+}
+
+.team__info{
+	display: inline-block;
+	padding-bottom: 1rem;
+	vertical-align: top;
+}
+
+.team__info__foto{
+	display: inline-block;
+	width: 29%;
+	height: 13rem;
+	margin-left: 15%;
+	overflow: hidden;
+}
+
+.team__info__foto__wrapper{
+	width: 100000rem;
+}
+
+.inslide{
+	z-index: 2;
+}
+
+.team__info__foto__img{
+	display: inline-block;
+	position: relative;
+	width: 21rem;
+	height: 12rem;
+}
+
+.team__info__foto__img > .team__info__foto-logo{
+	display: none;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.team__info__foto-logo{
+	min-width: 100%;
+	max-height: 100%;
+}
+
+.team__info > h1{
+	text-transform: uppercase;
+}
+
+.team__info > .personal,
+.team-player__info > .personal,
+.team-attainment,
+.about-player{
+	font: 1.4rem "Open Sans", sans-serif;
+}
+
+.about-player{
+	padding-top: 1rem;
+}
+
+.position,
+.attainment,
+.player-characteristic{
+	font-weight: bold;
+}
+
+.team-player__info-foto{
+	float: left;
+	padding-right: 1rem;
+}
+
+.block__center__championat-team-name{
+	font: bold 2rem "Open Sans", sans-serif;
+	text-transform: uppercase;
+	padding-right: 2%;
+}
+
+.championat-team-logo{
+	width: 90%;
+	height: 100%;
+	vertical-align: text-bottom;
+}
+
+.team-player-number,
+.team-player-matches,
+.team-player-year,
+.team-player-games,
+.team-player-allgoals,
+.team-player-matches,
+.team-player-goals,
+.team-player-yellow,
+.team-player-red{
+	width: 5%;
+}
+
+.team-player-name{
+	width: 35%;
+}
+
+.team-player-citizenship{
+	width: 20%;
+}
+
+.team-player-name-link{
+	display: block;
+	text-align: left;
+}
+
+/*Autogoals*/
+
+.autogoals > span{
+	font: 1.4rem "Open Sans", sans-serif;
+}
+
+/*Cup*/
+
+.block__center__cup{
+	background-color: #ffffff;
+}
+
+.cup-stage{
+	background-color: #e1e3e5;
+	font: bold 1.4rem "Open Sans", sans-serif;
+	margin: 0 0 0.5rem;
+	color: #241111;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cup-match{
+	position: relative;
+	background-color: #edeef0;
+	margin-bottom: 0.1rem;
+	font: 1.4rem "Open Sans", sans-serif;
+}
+
+.cup-match-result{
+	font-weight: bold;
+}
+
+.cup-match-group{
+	position: absolute;
+	right: 1%;
+	font-weight: bold;
+}
+
+/*Transfers*/
+
+.transfers{
+	width: 100%;
+}
+
+.transfers__block__title{
+	font: bold 1.6rem "Open Sans", sans-serif;
+}
+
+.transfers__team,
+.transfers__title,
+.transfers__block__title{
+	width: 100%;
+	background-color: #e1e3e5;
+	text-align: center;
+	text-transform: uppercase;
+	font: bold 1.6rem "Open Sans", sans-serif;
+	margin: 0;
+}
+
+.transfers__in,
+.transfers__out{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+.transfers__in{
+}
+
+.transfers__out{
+}
+
+.transfers__block__title,
+.transfers__title{
+	background-color: inherit;
+}
+
+.transfers__player__in,
+.transfers__player__out{
+	font: 1.6rem "Open Sans", sans-serif;
+}
+
+.transfers__exactly{
+	font-weight: bold;
+}
+
+/*Contacts*/
+
+.block__contacts__wrapper{
+	margin-top: 0;
+}
+
+.block__contacts__info{
+	font: bold 1.4rem "Open Sans", sans-serif;
+}
+
+/*Footer*/
+
+.footer__copyright__container{
+	width: 59%;
+	margin: 0 auto;
+}
+
+.footer__copyright__container > p{
+	display: inline-block;
+	font: bold 1.4rem "Open Sans", sans-serif;
+}
+
+.footer__copyright--feedback{
+	float: right;
+}
+
+.footer__copyright--feedback > a{
+	color: #161719;
+}

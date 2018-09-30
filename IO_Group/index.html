@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mozgow Eugen">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>IOGroup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-block">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="#" class="logo-link">
+                        <img src="dist/images/logo.png" class="logo" alt="logo">
+                    </a>
+                </div>
+                <div class="stamp-container">
+                    <a href="#" class="stamp-link">
+                        <img src="dist/images/sovsek.png" class="stamp" alt="stamp">
+                    </a>
+                </div>
+            </div>
+            <div class="deal-block">
+                <div class="title-block">
+                    <a href="#" class="deal-title">
+                        <img src="dist/images/deal.png" class="deal" alt="deal">
+                    </a>
+                </div>
+                <div class="info-block">
+                    <div class="info-row">
+                        <span class="info-data">Полное ФИО</span>
+                        <input type="text" class="info-input" value="Мозгов Евгений Викторович">
+                    </div>
+                    <div class="info-row">
+                        <span class="info-data info-year">Год рождения</span>
+                        <input type="text" class="info-input" value="1989">
+                    </div>
+                    <div class="info-row">
+                        <span class="info-data info-place">Место жительства</span>
+                        <input type="text" class="info-input" value="г. Томск">
+                    </div>
+                    <div class="info-row">
+                        <span class="info-data">Скайп</span>
+                        <input type="text" class="info-input" value="mosgov">
+                    </div>
+                    <div class="info-row">
+                        <span class="info-data">Почта</span>
+                        <input type="text" class="info-input" value="evg2037@yandex.ru">
+                    </div>
+                </div>
+                <div class="about-block">
+                    <h3 class="about-title">Расскажите о себе чекбоксами</h3>
+                    <p class="about-task">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+                    <div class="about-left">
+                        <div class="about-row">
+                            <input type="checkbox" id="bem" checked>
+                            <label for="bem"><span></span>Методология БЭМ</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="jquery" checked>
+                            <label for="jquery"><span></span>jQuery</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="haml">
+                            <label for="haml"><span></span>HAML</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="sass" checked>
+                            <label for="sass"><span></span>SASS</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="less">
+                            <label for="less"><span></span>LESS</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="jade" checked>
+                            <label for="jade"><span></span>Jade</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="stylus">
+                            <label for="stylus"><span></span>Stylus</label>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-row">
+                            <input type="checkbox" id="angular" checked>
+                            <label for="angular"><span></span>Знаю(изучаю) Angular</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="emails">
+                            <label for="emails"><span></span>Верстка рассылок</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="media" checked>
+                            <label for="media"><span></span>Адаптивная верстка</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="lazy">
+                            <label for="lazy"><span></span>Я ленивый(-ая)</label>
+                        </div>
+                        <div class="about-row">
+                            <input type="checkbox" id="english">
+                            <label for="english"><span></span>У меня хороший английский</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-block">
+                    <h3 class="js-block-title">Уровень владения JavaScript</h3>
+                    <div class="slider" id="slider">
+                        <div class="slider-item">
+                            <span class="slider-item_title">Не владею</span>
+                        </div>
+                        <div class="slider-item">
+                            <span class="slider-item_title">Использую готовые решения</span>
+                        </div>
+                        <div class="slider-item">
+                            <span class="slider-item_title">Использую готовые решения и умею их переделывать</span>
+                        </div>
+                        <div class="slider-item">
+                            <span class="slider-item_title">Пишу сложный JS с нуля</span>
+                        </div>
+                        <a href="#" class="slider-mark" id="slider-mark"></a>
+                    </div>
+                </div>   
+                <div class="paper-block">
+                    <h3 class="paper-block-title">Расскажите о себе словами</h3>
+                    <p class="paper-block-task">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+                    <div class="paper-content">
+                        <textarea id="textarea">От данной вакансии я жду возможность получения практики верстки реальных проектов с целью улучшения своих знаний и навыков, а также принесения пользы компании-работодателю</textarea>
+                    </div>
+                </div>
+                <div class="plans-block">
+                    <h3 class="plans-block-title">Какие у вас планы на будущее?</h3>
+                    <p class="plans-block-task">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+                    <div class="plans-row">
+                        <input type="radio" id="verstka" checked>
+                        <label for="verstka"><span></span>Верстать</label>
+                    </div>
+                    <div class="plans-row">
+                        <input type="radio" id="skillsJs" checked>
+                        <label for="skillsJs"><span></span>Прокачиваться в JS</label>
+                    </div>
+                    <div class="plans-row">
+                        <input type="radio" id="managers">
+                        <label for="managers"><span></span>Менеджерство</label>
+                    </div>
+                    <div class="plans-row">
+                        <input type="radio" id="others">
+                        <label for="others"><span></span>Другое</label>
+                    </div>
+                </div>
+                <div class="date-block">
+                    <span class="date-title">Дата заполнения</span>
+                    <input type="text" class="info-input" value="29.07.2017">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="dist/js/main.js"></script>
+    <script src="dist/js/autoresize.js"></script>
+</body>
+</html>
+    

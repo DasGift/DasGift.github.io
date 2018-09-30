@@ -1,0 +1,36 @@
+body,
+.projects{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  max-width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #e4e4e4;
+}
+
+.projects-item{
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+}
+
+.projects-link{
+  font: bold 18px 'Arial';
+  color: #141714;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.project-img{
+  display: block;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.project-img > img{
+  width: 100%;
+}

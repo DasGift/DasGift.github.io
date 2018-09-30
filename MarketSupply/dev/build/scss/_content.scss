@@ -1,0 +1,374 @@
+.content-block-left,
+.content-block-right{
+  display: inline-block;
+}
+
+.content-block-left{
+  width: 24%;
+  margin-right: 2.2rem;
+  vertical-align: top;
+}
+
+.content-block-right{
+  width: 73%;
+}
+
+/*left*/
+.content-menu-wrapper{
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 2.667rem;
+}
+
+.content-menu{
+  display: inline-block;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.content-menu__item{
+  //list-style-position: inside;
+  position: relative;
+  list-style: none;
+  text-indent: 1.167rem;
+  margin: 0 1.083rem;
+  padding: 1.417rem 0 1.5rem 0;
+  border-bottom: 1px solid #eaeaea;
+  &:last-child{
+    border-bottom: none;
+  }
+  .content-menu_link{
+    font: 1.25rem $LatoRegular, sans-serif;
+    color: #222222;
+    padding-left: 2rem;
+  }
+  &:before{
+    content: '';
+    @include sprite($s-menu-list-icon);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*Hot deal*/
+
+.deals-img-wrapper{
+  width: 100%;
+  padding-top: 2.167rem;
+  .deals-product{
+    // display: block;
+    // width: 100%;
+  }
+  .slider-item{
+  	float: left;
+  	list-style: none;
+    .slider-deals-product{
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 13px;
+    }
+  }
+}
+
+.deal-info{
+  text-align: center;
+  padding: 1.667rem 0 0 0;
+  span{
+    // font: 1.25rem $LatoRegular, sans-serif;
+    // color: #3d3d3d;
+    line-height: 2.083rem;
+  }
+  .deal-info_title{
+    display: block;
+    font: 1.25rem $LatoRegular, sans-serif;
+  }
+}
+
+.deals-wrapper{
+  border-top: 0.1rem solid #eaeaea;
+}
+
+/*slider*/
+
+.slider-wrapper{
+	overflow: hidden;
+}
+
+.slider-list{
+	width: 25500px;
+  position: relative;
+	transition-duration: .3s;
+  left: -29px;
+}
+
+.newslettes-wrapper__title{
+  font: 1.25rem $LatoRegular, sans-serif;
+  color: #3d3d3d;
+  padding: 1.833rem 0;
+}
+
+.subscribe__text{
+  width: 100%;
+  line-height: 3.75rem;
+  font: $LatoRegular, sans-serif;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 5%;
+  text-indent: 1rem;
+}
+
+.sales-block{
+  padding: 0;
+  overflow: hidden;
+}
+
+/*right*/
+
+.content-top-sale-wrapper{
+  @extend .background-settings;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  float: right;
+  background-image: url('../images/main-banner-logo.png');
+  margin-bottom: 0.4rem;
+  padding-bottom: 3px;
+  .content-top-sale-info{
+    position: absolute;
+    width: 100%;
+    background-color: #f10e34;
+    bottom: 43px;
+  }
+}
+
+.content-top-sale{
+  display: inline-block;
+  text-align: center;
+  padding: 7.5rem 0 0 5rem;
+  span{
+    font: 1.833rem $LatoBlack, sans-serif;
+    color: #ffffff;
+    display: block;
+  }
+  .top_line{
+    font-size: 3.167rem;
+    color: #303a7a;
+  }
+  .middle_line{
+    font-size: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .content-top-sale_button{
+    font: 1.417rem $LatoBold, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 1.167rem 2.667rem;
+    margin: 4.167rem 0 0 0;
+    background-color: inherit;
+    border: 0.2rem solid #000000;
+  }
+}
+
+.content-top-sale-block{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  padding: 2rem 0;
+  span{
+    display: block;
+  }
+  .content-top-sale-info_title{
+    font: 1.25rem $LatoBold, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  .content-top-sale-info_descr{
+    font: 1.25rem $LatoRegular, sans-serif;
+    color: #ffffff;
+  }
+}
+
+/*New product*/
+
+.content-new-products{
+  display: inline-block;
+  position: relative;
+  width: 93%;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+  .content-new-products_title{
+    padding-left:  1.667rem;
+  }
+}
+
+.content-new-products-menu{
+  float: right;
+  padding: 0.4167rem 8.333rem 0 0;
+  .content-new-products__item{
+    display: inline-block;
+    padding: 0 1.667rem 0 0;
+  }
+  .content-new-products_link{
+    font: 1.25rem $LatoRegular, sans-serif;
+    color: #3d3d3d;
+  }
+}
+
+.deals-new-products{
+  display: inline-block;
+  width: 190px !important;
+  //padding-right: 3.5rem;
+  &:first-child{
+    padding-left: 0.8333rem;
+  }
+  &:last-child{
+    padding-right: 0.8333rem;
+  }
+}
+
+/*Fasion sale*/
+
+.content-fasion-sale{
+  padding: 0;
+  margin-bottom: 2.917rem;
+}
+
+.fasion-sale{
+  display: inline-block;
+  width: 49%;
+  background: #fff;
+  vertical-align: top;
+  margin-right: 13px;
+  overflow: hidden;
+  &:last-child{
+    margin-right: 0;
+  }
+  .fasion-sale-image{
+    display: inline-block;
+    position: relative;
+    width: 259px;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -19px;
+      bottom: 0;
+      border-bottom: 323px solid #FFF;
+      border-left: 65px solid transparent;
+    }
+  }
+  .fasion-sale-info{
+    display: inline-block;
+    padding: 5rem 0 0 0;
+    vertical-align: top;
+    text-align: right;
+    *{
+      display: block;
+    }
+    .fasion-sale-info_year,
+    .fasion-sale-info_bottom{
+      font: 3.75rem $LatoBlack, sans-serif;
+      color: #dedbdb;
+    }
+    .fasion-sale-info_title{
+      font: 1.25rem $LatoBlack, sans-serif;
+      text-transform: uppercase;
+      color: #323232;
+    }
+    .fasion-sale-info_buy{
+      font: 1.25rem $LatoBlack, sans-serif;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #108be8;
+      padding: 2rem 0 1.417rem;
+    }
+    .fasion-sale-info_bottom{
+      font-size: 1rem;
+    }
+  }
+}
+
+/*Sakes block*/
+.sales-image-wrapper{
+  display: inline-block;
+  width: 60%;
+  .sales-block-img{
+    width: 100%;
+  }
+}
+
+.content-top-sales-info{
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  padding-top: 1.25rem;
+  .content-top-sales-info__title{
+    font: 1.833rem $LatoBlack, sans-serif;
+    color: #000000;
+  }
+  .content-top-sales-info__description{
+    font: 1.833rem $LatoBold, sans-serif;
+    color: #0f8ce9;
+  }
+  h1{
+    line-height: 0.8333rem;
+  }
+}
+
+/*Featured*/
+
+.deals-img-wrapper-small{
+  display: inline-block;
+  padding-top: 3.333rem;
+  padding-right: 2.25rem;
+  padding-bottom: 1.917rem;
+}
+
+.deals-product__small{
+  display: inline-block;
+}
+
+.deal-info-small{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0;
+  padding-left: 1.833rem;
+  text-align: left;
+  span{
+    line-height: 2.5rem;
+  }
+}
+
+/*Partners*/
+
+.partners-block{
+  display: inline-block;
+  width: 100%;
+  background-color: #f10e34;
+}
+
+.logo-wrapper{
+  padding: 3.917rem 0;
+}
+
+.logo-list{
+  .logo-item{
+    display: inline-block;
+    list-style: none;
+    margin-right: 8.333rem;
+    &:last-child{
+      margin-right: 0;
+    }
+    .logo-link{
+      display: block;
+      text-decoration: none;
+    }
+  }
+}

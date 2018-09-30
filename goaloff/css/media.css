@@ -1,0 +1,707 @@
+/*Media*/
+
+@media screen and (min-width:1024px) and (max-width:1280px){
+	.menu__link{
+		padding: 1.9rem;
+	}
+
+	.menu__text{
+		font: 14px "Panton-BlackCaps",sans-serif;
+		text-transform: uppercase;
+		color: #188A19;
+	}
+
+    .submenu__text{
+        font: 10px "Panton-BlackCaps",sans-serif;
+    }
+
+	.block__center__news--text{
+		padding-bottom: 1rem;
+	}
+
+	.championat-current-tour--teams{
+		padding-right: 2rem;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px){
+	.menu__link{
+		padding: 0.8rem;
+	}
+
+	.menu__text{
+		font: 1.4rem "Panton-BlackCaps",sans-serif;
+		text-transform: uppercase;
+		color: #188A19;
+	}
+
+	.championat__online > .championat__online--score{
+		right: 34%;
+	}
+
+	.block__center__news--text{
+		padding-bottom: 1rem;
+	}
+
+	.block__center__news--foto{
+		width: 25%;
+	}
+
+	.matchInfo-teams{
+		max-width: 95%;
+	}
+
+	.footer__copyright__container{
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+	.block__logo{
+		width: 17%;
+	}
+
+	.block__menu{
+		width: 82%;
+	}
+
+	.submenu__list{
+		width: 9rem;
+		padding: 0 0 2rem 0;
+	}
+
+	.submenu__text{
+		font-size: 1rem;
+	}
+
+	.block__online{
+		width: 100%;
+	}
+
+	.tournament--name,
+	.championat__online > *{
+		font-size: 1.2rem;
+	}
+
+	.menu__link{
+		padding: 0.2rem;
+		text-align: left;
+	}
+
+	.menu__text{
+		font: 12px "Panton-BlackCaps",sans-serif;
+	}
+
+	.block__center{
+		width: 57%;
+	}
+
+	.block__right{
+		width: 21%;
+	}
+
+	.block__right-championat__team{
+		display: none;
+	}
+
+	.block__center__championat-team__wrapper{
+		width: 79%;
+	}
+
+	.championat-team__table td{
+		font-size: 1.1rem;
+	}
+
+	.block__left__news > *,
+	.block__center__news--text,
+	.accordeon__trigger{
+		font-size: 1.1rem;
+	}
+
+	.block__center__news--title{
+		font-size: 1.4rem;
+	}
+
+	.block__center__news--foto{
+		width: 30%;
+	}
+
+	.block__left__news-foto{
+		width: 2rem;
+		padding-top: 1rem;
+	}
+
+	.block__center__championat-name{
+		font-size: 1.6rem;
+	}
+
+	.matchInfo-teams{
+		max-width: 100%;
+	}
+
+	.matchInfo-goals{
+		font: bold 1.4rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-teamsHoz,
+	.divide,
+	.matchInfo-teamsGast,s{
+		font: 1.4rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-title{
+		font: bold 1.8rem "Open Sans", sans-serif;
+	}
+
+	.yellow-card,
+	.red-card{
+	  display: none;
+	}
+
+	.punishment,
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  display: inline-block;
+	}
+
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  width: 1.2rem;
+	  font: bold 1.1rem "Open Sans", sans-serif;
+	}
+
+	.subtitution-icon{
+	  position: relative;
+	  width: 1.2rem;
+	  left: 0;
+		margin-right: 0;
+	}
+
+	.subtitution-time,
+	.punishment-time{
+	  font: bold 1.1rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour__game{
+		font: 1.2rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour--score{
+		right: 20%;
+	}
+
+	.accordeon .table-place,
+	.accordeon .table-team,
+	.accordeon .table-games,
+	.accordeon .table-points{
+		font-size: 1rem;
+	}
+
+	.all > .all-text > a{
+		font: bold 1.3rem "Open Sans", sans-serif;
+	}
+
+	.footer__copyright__container > p{
+		font: bold 1.1rem "Open Sans", sans-serif;
+	}
+
+	.footer__copyright__container{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px){
+	.block__logo{
+		width: 100%;
+	}
+
+	.block__menu{
+		width: 100%;
+	}
+
+	.menu__link{
+		padding: 0;
+	}
+
+	.menu__text{
+		font-size: 1rem;
+	}
+
+	.block__online{
+		width: 100%;
+	}
+
+	.tournament--name,
+	.championat__online > *{
+		font-size: 1.1rem;
+	}
+
+	.championat__online > .championat__online--score{
+		right: 30%;
+	}
+
+	.submenu__list{
+		width: 9rem;
+		padding: 0 0 2rem 0;
+	}
+
+	.submenu__text{
+		font-size: 0.9rem;
+	}
+
+	.block__left{
+		width: 30%;
+	}
+
+	.block__center{
+		width: 69%;
+	}
+
+	.block__center__news--text{
+		padding-bottom: 1rem;
+	}
+
+	.block__center__news--foto{
+		width: 40%;
+	}
+
+	.block__center__article--title__wrapper > h1{
+		font-size: 1.6rem;
+	}
+
+	.block__center__article > p{
+		font-size: 1.2rem;
+	}
+
+	.block__center__allnews__pagination__wrapper > a,
+	.block__center__allArticles__pagination__wrapper > a{
+		padding: 0.5rem;
+		font: bold 1.2rem "Open Sans", sans-serif;
+	}
+
+	.block__center__championat-name,
+	.block__center__championat-team-name{
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+
+	.block__right,
+	.team-player-number,
+	.team-player-year,
+	.team-player-games,
+	.team-player-allgoals,
+	.team-player-citizenship{
+		display: none;
+	}
+
+	.team-player-position{
+		width: 5%;
+	}
+
+	.block__left__news > *,
+	.block__center__news--text,
+	.accordeon__trigger{
+		font-size: 1.1rem;
+	}
+
+	.block__left__news{
+		padding: 0 0 1rem 0;
+	}
+
+	.block__center__news--title{
+		font-size: 1.4rem;
+	}
+
+	.block__center__article--foto{
+		width: 100%;
+	}
+
+	.block__left__news-foto{
+		width: 2rem;
+		padding-top: 1rem;
+	}
+
+	.championat-current-tour--title{
+		font: bold 1.5rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour__game{
+		font: 1rem "Open Sans", sans-serif;
+	}
+
+	td,
+	.block__center__championat-goalscorers,
+	.autogoals > span{
+		font-size: 1rem;
+	}
+
+	.block__center__championat-goalscorers{
+		font-weight: bold;
+	}
+
+	.all > .all-text > a{
+		font: bold 1.3rem "Open Sans", sans-serif;
+	}
+
+	.transfers__player__in,
+	.transfers__player__out{
+		font: 1.4rem "Open Sans", sans-serif;
+	}
+
+	.cup-match > span{
+		font-size: 1.4rem;
+	}
+
+	.block__center__matchInfo{
+		padding: 0;
+	}
+
+	.matchInfo-teams{
+		max-width: 100%;
+	}
+
+	.matchInfo-goals{
+		font: bold 1.3rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-teamsHoz,
+	.divide,
+	.matchInfo-teamsGast,s{
+		font: 1.1rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-title{
+		font: bold 1.6rem "Open Sans", sans-serif;
+	}
+
+	.yellow-card,
+	.red-card{
+	  display: none;
+	}
+
+	.punishment,
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  display: inline-block;
+	}
+
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  width: 1rem;
+	  font: bold 1.1rem "Open Sans", sans-serif;
+	}
+
+	.subtitution-icon{
+	  width: 1rem;
+	  left: 0;
+		margin-right: 0;
+	}
+
+	.subtitution-time,
+	.punishment-time{
+	  font: bold 0.9rem "Open Sans", sans-serif;
+	}
+
+	.footer__copyright__container{
+		width: 100%;
+	}
+
+	.footer__copyright__container > p{
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px){
+	.championat-current-tour--score{
+		right: 2%;
+	}
+
+	.championat-current-tour--info{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 599px){
+	.championat-current-tour--score{
+		right: 20%;
+	}
+}
+
+@media screen and (min-width: 240px) and (max-width: 399px){
+	.block__logo{
+		width: 100%;
+	}
+
+	.block__menu{
+		width: 100%;
+	}
+
+	.menu__link{
+		padding: 0;
+	}
+
+	.menu__text{
+		font-size: 0.5rem;
+	}
+
+	.submenu__list{
+		width: 7rem;
+		padding: 0 0 2rem 0;
+	}
+
+	.submenu__text{
+		font-size: 0.7rem;
+	}
+
+	.block__online{
+		width: 100%;
+	}
+
+	.tournament--name,
+	.championat__online > *{
+		font-size: 0.6rem;
+	}
+
+	.championat__online > .championat__online--score{
+		right: 30%;
+	}
+
+	.block__left{
+		width: 45%;
+	}
+
+	.block__center{
+		width: 53%;
+	}
+
+	.block__center__news--text{
+		padding-bottom: 1rem;
+	}
+
+	.block__center__news--foto{
+		width: 80%;
+	}
+
+	.block__center__allnews__pagination__wrapper > a,
+	.block__center__allArticles__pagination__wrapper > a{
+		padding: 0.1rem;
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+
+	.block__center__allnews--text,
+	.block__center__allnews-date,
+	.block__center__allArticles--text,
+	.block__center__allArticles-date{
+		font: 1.2rem "Open Sans", sans-serif;
+	}
+
+	.block__center__allnews-date,
+	.block__center__allArticles-date{
+		font-weight: bold;
+	}
+
+	.block__center__article--title__wrapper > h1{
+		font-size: 1.2rem;
+	}
+
+	.block__right{
+		display: none;
+	}
+
+	.block__left__news > *,
+	.block__center__news--text,
+	.accordeon__trigger{
+		font-size: 0.9rem;
+	}
+
+	.block__left__news{
+		padding: 0 0 1rem 0;
+	}
+
+	.block__center__news--title{
+		font-size: 1rem;
+	}
+
+	.block__left__news-foto{
+		width: 2rem;
+		padding-top: 1rem;
+	}
+
+	.news-description{
+		font: italic 1.1rem "Open Sans", sans-serif;
+	}
+
+	.block__center__news--title__wrapper > h1{
+		font-size: 1.4rem;
+	}
+
+	.block__center__article--foto{
+		width: 100%;
+	}
+
+	.block__center__article > p{
+		font-size: 1rem;
+	}
+
+	.block__center__championat__wrapper,
+	.block__center__championat-team__wrapper{
+		width: 100%;
+	}
+
+	.block__center__championat-name,
+	.block__center__championat-team-name{
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour--title{
+		font: bold 1.5rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour--score{
+		right: 2%;
+	}
+
+	.championat-current-tour--info{
+		display: none;
+	}
+
+	.championat__table  .table-bold,
+	.championat__table .table-place{
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+
+	td,
+	.block__center__championat-goalscorers,
+	.autogoals > span{
+		font: 1rem "Open Sans", sans-serif;
+	}
+
+	.block__center__championat-goalscorers{
+		font-weight: bold;
+	}
+
+	.block__center__championat-team{
+		padding: 0;
+	}
+
+	.team-player-number,
+	.team-player-year,
+	.team-player-games,
+	.team-player-allgoals,
+	.team-player-citizenship,
+	.block__left__championat{
+		display: none;
+	}
+
+	.team-player-position{
+		width: 5%;
+	}
+
+	.all > .all-text > a{
+		font: bold 1.1rem "Open Sans", sans-serif;
+	}
+
+	.transfers__title{
+		font-size: 1.4rem;
+	}
+
+	.transfers__player__in,
+	.transfers__player__out{
+		font: 1.2rem "Open Sans", sans-serif;
+	}
+
+	.cup-match-group{
+		display: none;
+	}
+
+	.block__center__matchInfo{
+		padding: 0;
+	}
+
+	.matchInfo-teams{
+		max-width: 100%;
+	}
+
+	.matchInfo-goals{
+		font: bold 1.3rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-teamsHoz,
+	.matchInfo-teamsGast{
+		width: 49%;
+		font: 0.9rem "Open Sans", sans-serif;
+	}
+
+	.matchInfo-title{
+		font: bold 1.6rem "Open Sans", sans-serif;
+	}
+
+	.yellow-card,
+	.red-card{
+	  display: none;
+	}
+
+	.punishment,
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  display: inline-block;
+	}
+
+	.punishment .yellow-card,
+	.punishment .red-card{
+	  width: 0.8rem;
+	  font: bold 0.9rem "Open Sans", sans-serif;
+	}
+
+	.subtitution-icon{
+	  display: none;
+	}
+
+	.subtitution-time,
+	.punishment-time{
+	  font: bold 0.9rem "Open Sans", sans-serif;
+	}
+
+	.subtitution-title,
+	.punishment-title{
+	  font: bold 1.4rem "Open Sans", sans-serif;
+	}
+
+	.footer__copyright__container{
+		width: 100%;
+	}
+
+	.footer__copyright__container > p{
+		font: bold 1rem "Open Sans", sans-serif;
+	}
+
+	.footer > .container{
+		display: table;
+	}
+
+	.footer__copyright__container{
+		width: 100%;
+	}
+
+	.footer__copyright__container > p{
+		display: block;
+		float: none;
+		font: bold 1.2rem "Open Sans", sans-serif;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 271px) and (max-width: 399px){
+	.championat-current-tour__game{
+		font: 1rem "Open Sans", sans-serif;
+	}
+}
+
+@media screen and (min-width: 240px) and (max-width: 270px){
+	.championat-current-tour__game{
+		font: 0.8rem "Open Sans", sans-serif;
+	}
+
+	.championat-current-tour--score{
+		right: 0;
+	}
+}

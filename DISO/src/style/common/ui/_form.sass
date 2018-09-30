@@ -1,0 +1,39 @@
+// -------------------------------------------------
+// Form elem style
+// -------------------------------------------------
+
+.form-control
+    width: 92%
+    height: 42px
+    margin-bottom: 20px
+    border: 1px solid #e6e6e6
+    box-shadow: none
+    color: #d1d1d1
+    font-size: 16px
+    
+    
+// -------------------------------------------------
+// Input radio, checkbox
+// -------------------------------------------------   
+    
+.checkbox
+    margin-top: 33px
+    .marker
+        display: inline-block
+        position: absolute
+        width: 15px
+        height: 15px
+        min-height: 0
+        left: 0
+        top: 6px
+        border: 1px solid #000000
+        background-color: #ffffff
+        vertical-align: middle
+        padding: 0
+
+    input:checked + .marker
+        &:before
+            content: '\2714'
+            position: relative;
+            right: 16px;
+            bottom: 3px;

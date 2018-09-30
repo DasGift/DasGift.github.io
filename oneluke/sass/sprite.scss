@@ -1,0 +1,184 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$behance-name: 'behance';
+$behance-x: 0px;
+$behance-y: 0px;
+$behance-offset-x: 0px;
+$behance-offset-y: 0px;
+$behance-width: 17px;
+$behance-height: 11px;
+$behance-total-width: 48px;
+$behance-total-height: 176px;
+$behance-image: '../sprite/sprite.png';
+$behance: (0px, 0px, 0px, 0px, 17px, 11px, 48px, 176px, '../sprite/sprite.png', 'behance', );
+$dribble-name: 'dribble';
+$dribble-x: 0px;
+$dribble-y: 39px;
+$dribble-offset-x: 0px;
+$dribble-offset-y: -39px;
+$dribble-width: 16px;
+$dribble-height: 16px;
+$dribble-total-width: 48px;
+$dribble-total-height: 176px;
+$dribble-image: '../sprite/sprite.png';
+$dribble: (0px, 39px, 0px, -39px, 16px, 16px, 48px, 176px, '../sprite/sprite.png', 'dribble', );
+$facebook-name: 'facebook';
+$facebook-x: 0px;
+$facebook-y: 55px;
+$facebook-offset-x: 0px;
+$facebook-offset-y: -55px;
+$facebook-width: 8px;
+$facebook-height: 16px;
+$facebook-total-width: 48px;
+$facebook-total-height: 176px;
+$facebook-image: '../sprite/sprite.png';
+$facebook: (0px, 55px, 0px, -55px, 8px, 16px, 48px, 176px, '../sprite/sprite.png', 'facebook', );
+$google-name: 'google';
+$google-x: 0px;
+$google-y: 71px;
+$google-offset-x: 0px;
+$google-offset-y: -71px;
+$google-width: 15px;
+$google-height: 17px;
+$google-total-width: 48px;
+$google-total-height: 176px;
+$google-image: '../sprite/sprite.png';
+$google: (0px, 71px, 0px, -71px, 15px, 17px, 48px, 176px, '../sprite/sprite.png', 'google', );
+$latesttwit-name: 'latesttwit';
+$latesttwit-x: 0px;
+$latesttwit-y: 138px;
+$latesttwit-offset-x: 0px;
+$latesttwit-offset-y: -138px;
+$latesttwit-width: 48px;
+$latesttwit-height: 38px;
+$latesttwit-total-width: 48px;
+$latesttwit-total-height: 176px;
+$latesttwit-image: '../sprite/sprite.png';
+$latesttwit: (0px, 138px, 0px, -138px, 48px, 38px, 48px, 176px, '../sprite/sprite.png', 'latesttwit', );
+$left-name: 'left';
+$left-x: 0px;
+$left-y: 88px;
+$left-offset-x: 0px;
+$left-offset-y: -88px;
+$left-width: 24px;
+$left-height: 25px;
+$left-total-width: 48px;
+$left-total-height: 176px;
+$left-image: '../sprite/sprite.png';
+$left: (0px, 88px, 0px, -88px, 24px, 25px, 48px, 176px, '../sprite/sprite.png', 'left', );
+$linkedin-name: 'linkedin';
+$linkedin-x: 0px;
+$linkedin-y: 24px;
+$linkedin-offset-x: 0px;
+$linkedin-offset-y: -24px;
+$linkedin-width: 16px;
+$linkedin-height: 15px;
+$linkedin-total-width: 48px;
+$linkedin-total-height: 176px;
+$linkedin-image: '../sprite/sprite.png';
+$linkedin: (0px, 24px, 0px, -24px, 16px, 15px, 48px, 176px, '../sprite/sprite.png', 'linkedin', );
+$right-name: 'right';
+$right-x: 0px;
+$right-y: 113px;
+$right-offset-x: 0px;
+$right-offset-y: -113px;
+$right-width: 24px;
+$right-height: 25px;
+$right-total-width: 48px;
+$right-total-height: 176px;
+$right-image: '../sprite/sprite.png';
+$right: (0px, 113px, 0px, -113px, 24px, 25px, 48px, 176px, '../sprite/sprite.png', 'right', );
+$twitter-name: 'twitter';
+$twitter-x: 0px;
+$twitter-y: 11px;
+$twitter-offset-x: 0px;
+$twitter-offset-y: -11px;
+$twitter-width: 16px;
+$twitter-height: 13px;
+$twitter-total-width: 48px;
+$twitter-total-height: 176px;
+$twitter-image: '../sprite/sprite.png';
+$twitter: (0px, 11px, 0px, -11px, 16px, 13px, 48px, 176px, '../sprite/sprite.png', 'twitter', );
+$spritesheet-width: 48px;
+$spritesheet-height: 176px;
+$spritesheet-image: '../sprite/sprite.png';
+$spritesheet-sprites: ($behance, $dribble, $facebook, $google, $latesttwit, $left, $linkedin, $right, $twitter, );
+$spritesheet: (48px, 176px, '../sprite/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

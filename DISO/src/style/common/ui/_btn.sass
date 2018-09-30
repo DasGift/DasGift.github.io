@@ -1,0 +1,135 @@
+// -------------------------------------------------
+// Buttons
+// -------------------------------------------------
+
+$btnText: #ffffff
+$btnMenuText: #e4e8ee
+
+
+$success: #cc0033
+$link: #4c75bd
+$primary: transparent
+$info: #212121
+
+
+.btn
+    border-radius: 100px
+    color: $btnText
+    //line-height: 1.5
+    box-sizing: border-box
+    &:active,
+    &:active:hover,
+    &:active:focus,
+    &:hover,
+    &:focus
+        box-shadow: none
+    &-menu
+        padding: 7px 19px
+        border: 1px solid #4c73ba
+        font-size: 15px
+        margin-left: 15px
+        font-family: 'Roboto'
+        line-height: 1.2
+        &:hover
+            background-color: $link
+            color: $btnMenuText
+        &:first-child
+            margin-left: 0
+    &-success
+        background-color: $success
+        font-size: 20px
+        padding: 9px 23px 13px
+        margin-top: 28px
+        margin-left: -35px
+        border: none
+        &:active,
+        &:active:hover,
+        &:active:focus,
+        &:hover,
+        &:focus
+            color: $btnText
+            background-color: $success
+            border: none
+    &-call
+        font-size: 16px
+        padding: 6px 15px
+    &-white
+        &:hover
+            color: $btnText
+    &-sm
+        padding: 6px 20px
+        margin-left: 16px
+    &-info
+        font-size: 14px
+        color: #3366cc
+        border: 1px solid #3366cc
+        background-color: $primary
+        font-weight: 600
+        text-align: center
+        margin: 28px 0 46px
+        padding: 6px 11px
+        &:active,
+        &:active:hover,
+        &:active:focus,
+        &:hover,
+        &:focus
+            color: #3366cc
+            background-color: $primary
+            border: 1px solid #3366cc
+    &-default 
+        border: 1px solid $info
+        color: $info
+        font-size: 18px
+        &:active,
+        &:active:hover,
+        &:active:focus,
+        &:hover,
+        &:focus
+            color: $info
+            background-color: $primary
+            border: 1px solid $info
+    &-warning
+        position: relative;
+        padding: 3px 18px
+        background-color: $success
+        border: none
+        left: 5px
+        bottom: 10px;
+        font-size: 14px;
+        &:active,
+        &:active:hover,
+        &:active:focus,
+        &:hover,
+        &:focus
+            background-color: $success
+            border: none
+        
+
+// -------------------------------------------------
+// Social
+// -------------------------------------------------
+
+.btnSoc
+    display: inline-block
+    width: 32px
+    height: 32px
+    background-repeat: no-repeat
+    background-position: center center
+    border-radius: 100%
+    margin-right: 20px
+    &:last-child
+        margin-right: 0
+    &-default
+        background-color: #03273f
+        &:hover
+            background-color: #405dbb
+    &-vk
+        background-image: url(../img/icon/vk.png)
+    &-fb
+        background-image: url(../img/icon/fb.png)
+    &-ok
+        background-image: url(../img/icon/ok.png)
+    &-gp
+        background-image: url(../img/icon/gp.png)
+    &-tw
+        background-image: url(../img/icon/tw.png)    

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mozgow Eugen">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/acc.js"></script>
+        <title>Goaloff</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+					<div class="header__top">
+						<div class="block__logo">
+                            <a href="index.html" class="logo-link">
+                                <img src="images/logo.png" alt="" class="logo">
+                            </a>
+                        </div>
+                        <div class="block__menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Россия
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="championat.html" class="submenu__link">
+												<span class="submenu__text">
+													Премьер Лига
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													ФНЛ
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="cup.html" class="submenu__link">
+												<span class="submenu__text">
+													Кубок России
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="transfers.html" class="submenu__link">
+												<span class="submenu__text">
+													Трансферы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Англия
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Премьер Лига
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Кубок Англии
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Кубок английской лиги
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Трансферы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Германия
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Бундеслига
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Кубок Германии
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Трансферы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Испания
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Ла Лига
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Кубок Испании
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Трансферы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Италия
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Серия А
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Кубок Италии
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Трансферы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											Еврокубки
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="championscup.html" class="submenu__link">
+												<span class="submenu__text">
+													Лига Чемпионов
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="leaguecup.html" class="submenu__link">
+												<span class="submenu__text">
+													Лига Европы
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+										<span class="menu__text">
+											ЧМ 2018
+										</span>
+                                    </a>
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="worldcup.html" class="submenu__link">
+												<span class="submenu__text">
+													Европа
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Азия
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Океания
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Конкакаф
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Африка
+												</span>
+											</a>
+										</li>
+										<li class="submenu__item">
+											<a href="#" class="submenu__link">
+												<span class="submenu__text">
+													Южная Америка
+												</span>
+											</a>
+										</li>
+									</ul>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+                </div>
+			</header>
+			<section class="content">
+				<div class="container">
+					<div class="block__content__wrapper" style="margin-top: 0";>
+						<div class="block__left">
+							<div class="block__left__news">
+								<span class="block__left__news-time">17:00</span>
+								<a href="#" class="block__left__news-foto">
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+										 width="626.000000pt" height="626.000000pt" viewBox="0 0 626.000000 626.000000"
+										 preserveAspectRatio="xMidYMid meet">
+
+										<g transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
+										   fill="#000000" stroke="none">
+											<path d="M2925 6246 c-147 -47 -237 -147 -265 -296 -13 -69 -13 -1503 0 -1583
+												21 -129 93 -226 209 -280 61 -29 73 -31 218 -35 l153 -5 0 -79 c0 -90 8 -111
+												50 -133 30 -15 39 -46 22 -71 -4 -7 -47 -13 -102 -16 -82 -3 -105 -9 -168 -38
+												-119 -55 -172 -122 -277 -355 -98 -216 -112 -237 -176 -255 -19 -6 -183 -10
+												-376 -10 l-341 0 -31 26 c-17 14 -31 31 -31 38 0 14 -46 59 -77 75 -12 6 -63
+												11 -113 11 -50 0 -101 -5 -113 -11 -31 -16 -77 -61 -77 -75 0 -7 -14 -24 -31
+												-38 -27 -23 -39 -26 -113 -26 -111 0 -177 -14 -261 -54 -85 -40 -178 -130
+												-223 -215 -64 -118 -62 -77 -62 -1275 0 -1208 -3 -1158 66 -1281 58 -105 150
+												-184 271 -233 l68 -27 1985 0 1985 0 68 27 c162 65 276 191 318 351 18 67 19
+												131 19 1161 0 1193 1 1155 -59 1274 -34 66 -122 160 -186 198 -108 63 -129 67
+												-400 73 -235 6 -252 7 -286 28 -40 26 -66 73 -175 323 -85 197 -211 297 -387
+												307 -124 7 -127 8 -127 48 0 29 4 36 26 41 36 9 54 57 54 142 l0 69 153 5
+												c138 4 158 7 210 31 119 54 201 165 218 294 11 86 11 1454 0 1550 -5 39 -19
+												93 -32 120 -35 72 -109 146 -182 179 l-62 29 -660 2 c-514 2 -669 -1 -700 -11z
+												m1352 -149 c50 -18 109 -81 127 -134 13 -38 16 -97 16 -339 l0 -292 -28 -53
+												c-17 -34 -44 -65 -71 -84 l-43 -30 -651 -3 c-727 -3 -706 -5 -768 65 -58 66
+												-59 75 -59 400 0 182 4 313 11 337 14 50 73 113 124 131 53 19 1291 20 1342 2z
+												m-597 -2307 l0 -40 -63 0 c-67 0 -87 10 -87 45 0 32 7 35 82 35 l68 0 0 -40z
+												m118 -1091 c446 -87 785 -421 887 -876 25 -108 27 -131 22 -273 -3 -109 -11
+												-178 -25 -231 -111 -429 -425 -742 -846 -844 -511 -124 -1055 131 -1288 605
+												-68 138 -107 290 -115 452 -16 319 102 622 332 854 124 125 241 202 402 263
+												206 79 402 94 631 50z m-1449 -157 c62 -50 76 -77 76 -145 -1 -77 -21 -118
+												-77 -155 -34 -22 -53 -27 -103 -27 -78 0 -125 29 -160 99 -29 58 -31 92 -10
+												144 48 114 185 156 274 84z"/>
+												<path d="M3445 2494 c-11 -2 -45 -9 -75 -15 -83 -15 -226 -77 -305 -130 -334
+												-228 -479 -615 -379 -1014 17 -68 101 -243 141 -295 57 -73 190 -196 251 -232
+												134 -80 245 -118 408 -139 248 -33 547 75 731 263 132 135 199 250 245 420 30
+												113 32 336 4 448 -86 342 -360 609 -698 680 -86 18 -263 26 -323 14z"/>
+										</g>
+									</svg>
+								</a>
+								<a href="mainNewsWithFoto.html" class="block__left__news-title block__left__news-title--main">Брайн Идову впервые в карьере вызван в сборную Нигерии.</a>
+							</div>
+							<div class="block__left__news">
+								<span class="block__left__news-time">17:00</span>
+								<a href="#" class="block__left__news-foto">
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+										 width="626.000000pt" height="626.000000pt" viewBox="0 0 626.000000 626.000000"
+										 preserveAspectRatio="xMidYMid meet">
+
+										<g transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
+										   fill="#000000" stroke="none">
+											<path d="M2925 6246 c-147 -47 -237 -147 -265 -296 -13 -69 -13 -1503 0 -1583
+												21 -129 93 -226 209 -280 61 -29 73 -31 218 -35 l153 -5 0 -79 c0 -90 8 -111
+												50 -133 30 -15 39 -46 22 -71 -4 -7 -47 -13 -102 -16 -82 -3 -105 -9 -168 -38
+												-119 -55 -172 -122 -277 -355 -98 -216 -112 -237 -176 -255 -19 -6 -183 -10
+												-376 -10 l-341 0 -31 26 c-17 14 -31 31 -31 38 0 14 -46 59 -77 75 -12 6 -63
+												11 -113 11 -50 0 -101 -5 -113 -11 -31 -16 -77 -61 -77 -75 0 -7 -14 -24 -31
+												-38 -27 -23 -39 -26 -113 -26 -111 0 -177 -14 -261 -54 -85 -40 -178 -130
+												-223 -215 -64 -118 -62 -77 -62 -1275 0 -1208 -3 -1158 66 -1281 58 -105 150
+												-184 271 -233 l68 -27 1985 0 1985 0 68 27 c162 65 276 191 318 351 18 67 19
+												131 19 1161 0 1193 1 1155 -59 1274 -34 66 -122 160 -186 198 -108 63 -129 67
+												-400 73 -235 6 -252 7 -286 28 -40 26 -66 73 -175 323 -85 197 -211 297 -387
+												307 -124 7 -127 8 -127 48 0 29 4 36 26 41 36 9 54 57 54 142 l0 69 153 5
+												c138 4 158 7 210 31 119 54 201 165 218 294 11 86 11 1454 0 1550 -5 39 -19
+												93 -32 120 -35 72 -109 146 -182 179 l-62 29 -660 2 c-514 2 -669 -1 -700 -11z
+												m1352 -149 c50 -18 109 -81 127 -134 13 -38 16 -97 16 -339 l0 -292 -28 -53
+												c-17 -34 -44 -65 -71 -84 l-43 -30 -651 -3 c-727 -3 -706 -5 -768 65 -58 66
+												-59 75 -59 400 0 182 4 313 11 337 14 50 73 113 124 131 53 19 1291 20 1342 2z
+												m-597 -2307 l0 -40 -63 0 c-67 0 -87 10 -87 45 0 32 7 35 82 35 l68 0 0 -40z
+												m118 -1091 c446 -87 785 -421 887 -876 25 -108 27 -131 22 -273 -3 -109 -11
+												-178 -25 -231 -111 -429 -425 -742 -846 -844 -511 -124 -1055 131 -1288 605
+												-68 138 -107 290 -115 452 -16 319 102 622 332 854 124 125 241 202 402 263
+												206 79 402 94 631 50z m-1449 -157 c62 -50 76 -77 76 -145 -1 -77 -21 -118
+												-77 -155 -34 -22 -53 -27 -103 -27 -78 0 -125 29 -160 99 -29 58 -31 92 -10
+												144 48 114 185 156 274 84z"/>
+											<path d="M3445 2494 c-11 -2 -45 -9 -75 -15 -83 -15 -226 -77 -305 -130 -334
+												-228 -479 -615 -379 -1014 17 -68 101 -243 141 -295 57 -73 190 -196 251 -232
+												134 -80 245 -118 408 -139 248 -33 547 75 731 263 132 135 199 250 245 420 30
+												113 32 336 4 448 -86 342 -360 609 -698 680 -86 18 -263 26 -323 14z"/>
+										</g>
+									</svg>
+								</a>
+								<a href="newsWithFoto.html" class="block__left__news-title">Данни приступил к индивидуальным тренировкам.</a>
+							</div>
+							<div class="block__left__news">
+								<span class="block__left__news-time">17:00</span>
+								<a href="newsWithoutFoto.html" class="block__left__news-title">Александр Кержаков: "Физически я готов на сто процентов".</a>
+							</div>
+							<div class="all">
+								<p class="all-text">
+									<a href="allnews.html">Все новости</a>
+								</p>
+							</div>
+						</div>	
+						<div class="block__center">
+							<div class="block__center__allnews">
+								<div class="block__center__allnews--title__wrapper">
+									<h1>Все новости.</h1>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="mainNewsWithFoto.html" class="block__center__allnews--text">Брайн Идову впервые в карьере вызван в сборную Нигерии</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithFoto.html" class="block__center__allnews--text">Данни приступил к индивидуальным тренировкам.</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="newsWithoutFoto.html" class="block__center__allnews--text">Александр Кержаков: "Физически я готов на сто процентов".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Максим Бузникин: "Зе Луиш добился прогресса".</a>
+								</div>
+								<div class="block__center__allnews--info__wrapper">
+									<span class="block__center__allnews-date">07.11.2016 17:00</span>
+									<a href="#" class="block__center__allnews--text">Сердар Таски летом может перейти в "Трабзонспор".</a>
+								</div>
+								<div class="block__center__allnews__pagination">
+									<div class="block__center__allnews__pagination__wrapper">
+										<a href="#" class="page">1</a>
+										<a href="#" class="page">2</a>
+										<a href="#" class="page">3</a>
+										<a href="#" class="page">4</a>
+										<a href="#" class="page">5</a>
+										<a href="#" class="page-search">...</a>
+										<a href="#" class="page">500</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__right">
+							<div class="block__right__table">
+								<div class="accordeon">
+									<ul class="accordeon-list">
+										<li class="accordeon-item">
+											<a href="#" class="accordeon__trigger">Чемпионат России</a>
+											<ul class="accordeon__inner">
+												<li class="accordeon__inner-item">
+													<table>
+														<tr>
+															<td class="table-place table-bold">№</td>
+															<td class="table-team table-bold">Команда</td>
+															<td class="table-games table-bold">И</td>
+															<td class="table-points table-bold">О</td>
+														</tr>
+														<tr>
+															<td class="table-place">1</td>
+															<td class="table-team">Спартак</td>
+															<td class="table-games">15</td>
+															<td class="table-points">25</td>
+														</tr>
+														<tr>
+															<td class="table-place">2</td>
+															<td class="table-team">ЦСКА</td>
+															<td class="table-games">15</td>
+															<td class="table-points">24</td>
+														</tr>
+														<tr>
+															<td class="table-place">3</td>
+															<td class="table-team">Зенит</td>
+															<td class="table-games">15</td>
+															<td class="table-points">23</td>
+														</tr>
+														<tr>
+															<td class="table-place">4</td>
+															<td class="table-team">Локомотив</td>
+															<td class="table-games">15</td>
+															<td class="table-points">22</td>
+														</tr>
+														<tr>
+															<td class="table-place">5</td>
+															<td class="table-team">Томь</td>
+															<td class="table-games">15</td>
+															<td class="table-points">21</td>
+														</tr>
+													</table>
+												</li>
+											</ul>
+										</li>
+									</ul>			
+								</div>
+							</div>
+					   </div>
+						<!--
+						<div class="block__right__slider">
+							<ul class="slider">
+								<li class="slider__item active">
+									<a class="slider__link" href="images/west/1.jpg">
+										<img src="images/west/1.jpg" class="block__right__slider--img">
+									</a>
+								</li>
+								<li class="slider__item">
+									<a class="slider__link" href="images/west/10.jpg">
+										<img src="images/west/10.jpg" class="block__right__slider--img">
+									</a>
+								</li>
+								<li class="slider__item">
+									<a class="slider__link" href="images/west/11.jpg">
+										<img src="images/west/11.jpg" class="block__right__slider--img">
+									</a>
+								</li>
+							</ul>
+						</div>
+						-->
+					</div>
+				</div>		
+			</section>
+			<div class="empty"></div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+                    <div class="footer__copyright__container">
+                        <p class="footer__copyright--text">Copyright© 2016 goaloff.net. Все права защищены</p>
+                        <p class="footer__copyright--feedback">
+							<a href="contacts.html">Контакты</a>
+						</p>
+                    </div>
+                </div>
+			</div>
+		</footer>
+	</body>
+</html>	

@@ -1,0 +1,59 @@
+// -------------------------------------------------
+// Review
+// -------------------------------------------------
+
+.review
+    padding: 0 14px 40px 26px
+    &_content
+        position: relative
+        //margin-left: 76px
+        margin-bottom: 15px
+        background-color: #ffffff
+        border: 1px solid #e6e6e6
+        border-radius: 2px
+        min-height: 60px
+        padding: 15px 13px 11px 23px
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            width: 10px
+            height: 10px
+            left: -6px
+            top: 10px
+            transform: rotate(45deg)
+            background-color: #ffffff
+            border-left: 1px solid #e6e6e6
+            border-bottom: 1px solid #e6e6e6
+        &:last-child
+            margin-bottom: 0
+    &_date
+        display: inline-block
+        float: right
+        font-size: 12px
+        line-height: 2
+        color: #a8a8a8
+    &_name
+        display: inline-block
+        margin-bottom: 2px
+        font-size: 20px
+        font-weight: 500
+        color: #000000
+        &:hover
+            text-decoration: none
+            color: inherit
+    &_text
+        margin-top: 8px
+        color: #7b7b7b
+        font-size: 16px
+    &_title
+        display: inline-block
+    &_link
+        position: relative
+        bottom: -21px
+        font-size: 16px
+        color: #3366cc
+        font-weight: 500
+        &:hover
+            text-decoration: none
+            color: #3366cc
