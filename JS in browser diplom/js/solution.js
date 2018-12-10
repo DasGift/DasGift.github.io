@@ -605,7 +605,6 @@ function updateCommentForm(newComment) {
 		let needCreateNewForm = true;
 
 		Array.from(wrapApp.querySelectorAll('.comments__form')).forEach(form => {
-			
 			//добавляем сообщение в форму с заданными координатами left и top
 			if (+form.dataset.left === showComments[id].left && +form.dataset.top === showComments[id].top) {
 				form.querySelector('.loader').parentElement.style.display = 'none';
