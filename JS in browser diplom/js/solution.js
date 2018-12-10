@@ -532,7 +532,7 @@ function createCommentForm(x, y) {
 
 		switch (event.code) {
 			case 'Enter':
-				messageSend();
+				formComment.submit();
 			break;
 		}
 	}
@@ -552,23 +552,23 @@ function createCommentForm(x, y) {
 	// отправка комментария на сервер
 	function commentsSend(message) {
 		fetch(`${urlApi}/pic/${dataGetParse.id}/comments`, {
-				method: 'POST',
-				body: message,
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
-				},
-			})
-			.then( res => {
-				if (res.status >= 200 && res.status < 300) {
-					return res;
-				}
-				throw new Error (res.statusText);
-			})
-			.then(res => res.json())
-			.catch(er => {
-				console.log(er);
-				formComment.querySelector('.loader').parentElement.style.display = 'none';
-			});
+			method: 'POST',
+			body: message,
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+		})
+		.then( res => {
+			if (res.status >= 200 && res.status < 300) {
+				return res;
+			}
+			throw new Error (res.statusText);
+		})
+		.then(res => res.json())
+		.catch(er => {
+			console.log(er);
+			formComment.querySelector('.loader').parentElement.style.display = 'none';
+		});
 	}
 
 	return formComment;
