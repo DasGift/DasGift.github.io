@@ -5,7 +5,7 @@ const urlApi = 'https://neto-api.herokuapp.com',
 	  canvas = document.createElement('canvas');
 
 let connection,
-dataGetParse, 
+	dataGetParse, 
 	showComments = {},
 	currentColor;
 
