@@ -729,7 +729,7 @@ function sendMaskState() {
 
 function tick () {
 	if (getGlobalVar('menu').offsetHeight > 66) {
-		getGlobalVar('menu').style.left = (wrapApp.offsetWidth - getGlobalVar('menu').offsetWidth) - 10 + 'px';
+		getGlobalVar('menu').style.display = 'table';
 	}
 
 	if(needsRepaint) {
