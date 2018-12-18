@@ -483,8 +483,6 @@ function createWrapforCanvasComment() {
 	});
 }
 
-
-
 //добавляем комментарий в форму
 function addMessageComment(message, form) {
 	let parentLoaderDiv = form.querySelector('.loader').parentElement;

@@ -166,7 +166,7 @@
       // отправляем комментарии
       function messageSend(event) {
         if (event) {
-          event.preventDefault();
+          event.preventDefault(); //Срабатывает при нажатии кнопки "Отправить" в форме для комментариев. При нажатии отрабатывает formComment.addEventListener('submit', messageSend);
         }
         const message = formComment.querySelector('.comments__input').value;
         const messageSend = `message=${encodeURIComponent(message)}&left=${encodeURIComponent(left)}&top=${encodeURIComponent(top)}`;
