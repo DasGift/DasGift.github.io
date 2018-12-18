@@ -1,13 +1,13 @@
 'use strict';
 
 const urlApi = 'https://neto-api.herokuapp.com',
-	  wrapCommentsCanvas = document.createElement('div'),
-	  canvas = document.createElement('canvas');
+      wrapCommentsCanvas = document.createElement('div'),
+      canvas = document.createElement('canvas');
 
 let connection,
-    dataGetParse, 
-	showComments = {},
-	currentColor;
+    dataGetParse,
+    showComments = {},
+    currentColor;
 
 const currentImage = document.querySelector('.current-image'),
 	  loader = document.querySelector('.image-loader'),
