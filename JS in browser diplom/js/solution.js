@@ -10,15 +10,15 @@ let connection,
     currentColor;
 
 const currentImage = document.querySelector('.current-image'),
-	  loader = document.querySelector('.image-loader'),
-	  wrapApp = document.querySelector('.app');
+      loader = document.querySelector('.image-loader'),
+      wrapApp = document.querySelector('.app');
 
 let movedPiece = null,
-	minY, minX, maxX, maxY,
-	shiftX = 0,
-	shiftY = 0,
-	url = new URL(`${window.location.href}`),
-	paramId = url.searchParams.get('id'); 
+    minY, minX, maxX, maxY,
+    shiftX = 0,
+    shiftY = 0,
+    url = new URL(`${window.location.href}`),
+    paramId = url.searchParams.get('id'); 
 
 document.addEventListener('mousedown', dragStart);
 document.addEventListener('mousemove', throttle(drag));
@@ -75,11 +75,12 @@ Array.from(getGlobalVar('menu').querySelectorAll('.menu__color')).forEach(color 
 	});
 });
 
-const ctx = canvas.getContext('2d');
-const BRUSH_RADIUS = 4; //размер кисти
+const ctx = canvas.getContext('2d'),
+      BRUSH_RADIUS = 4; //размер кисти
+
 let curves = [],
-	drawing = false,
-	needsRepaint = false;
+    drawing = false,
+    needsRepaint = false;
 
 canvas.addEventListener("mousedown", (event) => {
 	if (!(getGlobalVar('menu').querySelector('.draw').dataset.state === 'selected')) return;
@@ -214,7 +215,7 @@ function drag(event) {
 	if (!movedPiece) {return; }
 
 	let x = event.pageX - shiftX,
-		y = event.pageY - shiftY;
+	    y = event.pageY - shiftY;
 
 	x = Math.min(x, maxX);
 	y = Math.min(y, maxY);
@@ -439,8 +440,9 @@ function checkComment(event) {
 
 //создаем холст для рисования	
 function createCanvas() {
-	const width = getComputedStyle(wrapApp.querySelector('.current-image')).width.slice(0, -2);
-	const height = getComputedStyle(wrapApp.querySelector('.current-image')).height.slice(0, -2);
+	const width = getComputedStyle(wrapApp.querySelector('.current-image')).width.slice(0, -2),
+	      height = getComputedStyle(wrapApp.querySelector('.current-image')).height.slice(0, -2);
+
 	canvas.width = width;
 	canvas.height = height;
 
