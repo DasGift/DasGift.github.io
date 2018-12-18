@@ -1,26 +1,24 @@
 'use strict';
 
-const urlApi = 'https://neto-api.herokuapp.com';
+const urlApi = 'https://neto-api.herokuapp.com',
+	  wrapCommentsCanvas = document.createElement('div'),
+	  canvas = document.createElement('canvas');
 
-const wrapCommentsCanvas = document.createElement('div');
-const canvas = document.createElement('canvas');
+let connection,
+	dataGetParse, 
+	showComments = {},
+	currentColor;
 
-let connection;
-let dataGetParse; 
-let showComments = {};
-let currentColor;
+const currentImage = document.querySelector('.current-image'),
+	  loader = document.querySelector('.image-loader'),
+	  wrapApp = document.querySelector('.app');
 
-const currentImage = document.querySelector('.current-image');
-const loader = document.querySelector('.image-loader');
-const wrapApp = document.querySelector('.app');
-
-let movedPiece = null;
-let minY, minX, maxX, maxY;
-let shiftX = 0;
-let shiftY = 0;
-
-let url = new URL(`${window.location.href}`);
-let paramId = url.searchParams.get('id'); 
+let movedPiece = null,
+	minY, minX, maxX, maxY,
+	shiftX = 0,
+	shiftY = 0,
+	url = new URL(`${window.location.href}`),
+	paramId = url.searchParams.get('id'); 
 
 document.addEventListener('mousedown', dragStart);
 document.addEventListener('mousemove', throttle(drag));
@@ -79,9 +77,9 @@ Array.from(getGlobalVar('menu').querySelectorAll('.menu__color')).forEach(color 
 
 const ctx = canvas.getContext('2d');
 const BRUSH_RADIUS = 4; //размер кисти
-let curves = [];
-let drawing = false;
-let needsRepaint = false;
+let curves = [],
+	drawing = false,
+	needsRepaint = false;
 
 canvas.addEventListener("mousedown", (event) => {
 	if (!(getGlobalVar('menu').querySelector('.draw').dataset.state === 'selected')) return;
@@ -215,12 +213,14 @@ function dragStart(event) {
 function drag(event) {
 	if (!movedPiece) {return; }
 
-	let x = event.pageX - shiftX;
-	let y = event.pageY - shiftY;
+	let x = event.pageX - shiftX,
+		y = event.pageY - shiftY;
+
 	x = Math.min(x, maxX);
 	y = Math.min(y, maxY);
 	x = Math.max(x, minX);
 	y = Math.max(y, minY);
+
 	movedPiece.style.left = x + 'px';
 	movedPiece.style.top = y + 'px';
 }
@@ -503,8 +503,8 @@ function createCommentForm(x, y) {
 		</div>`;
 
 	//смещение, чтобы маркер встал туда, куда кликнули
-	const left = x - 22;
-	const top = y - 14;
+	const left = x - 22,
+		  top = y - 14;
 
 	formComment.style.cssText = `
 		top: ${top}px;
