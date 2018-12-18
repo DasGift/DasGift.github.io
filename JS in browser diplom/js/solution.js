@@ -365,7 +365,7 @@ function setReview(id) {
 	getGlobalVar('burger').style.cssText = ``;
 	showMenu();
 	let urlBr = localStorage.host;
-    history.pushState(null, null, urlBr);
+	history.pushState(null, null, urlBr);
 
 	currentImage.addEventListener('load', () => {
 		hideElement(loader);
