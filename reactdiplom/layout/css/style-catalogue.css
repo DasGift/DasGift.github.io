@@ -134,7 +134,7 @@ select {
 .product-catalogue__item-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 892px;
   margin-left: 22px;
   border-top: 1px solid #F4F4F4;
@@ -203,11 +203,6 @@ a.item-list__item-card {
   margin-bottom: -17px;
   padding-bottom: 53px;
   text-decoration: none;
-}
-
-.product-catalogue__item-list:not(.product-catalogue__item-list_favorite) a.item-list__item-card:nth-of-type(3n + 2) {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .product-catalogue .item-list__item-card:hover {
@@ -417,8 +412,10 @@ span.producer {
 }
 
 .product-catalogue__pagination ul {
+  width: 310px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 
 .product-catalogue__pagination ul li {
@@ -431,10 +428,6 @@ span.producer {
   font-weight: 900;
   font-size: 14px;
   color: #000000;
-}
-
-.product-catalogue__pagination ul li + li {
-    margin-left: 25px;
 }
 
 li.active {
@@ -463,9 +456,6 @@ li.active {
   background-position: 36px -107px;
 }
 
-.hidden {
-  visibility: hidden;
-}
 
 /*Слайдер "Вы смотрели"*/
 .product-catalogue__overlooked-slider {
@@ -488,6 +478,7 @@ li.active {
   top: 20px;
   left: 1px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -522,10 +513,6 @@ li.active {
   background-position: center center;
   background-size: contain;
   overflow: hidden;
-}
-
-.overlooked-slider__item + .overlooked-slider__item {
-  margin-left: 20px;
 }
 
 .overlooked-slider__item:hover {
@@ -815,26 +802,17 @@ span.color-name {
   vertical-align: middle;
 }
 
+span.color-name:hover {
+ text-decoration: underline;
+}
+
 .sidebar__color .color {
   display: inline-block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   vertical-align: middle;
-  opacity: 0.7;
 }
-
-.sidebar__color ul li:hover span {
-  text-decoration: underline;
-}
-
-.sidebar__color ul li:hover div {
-  opacity: 1;
-}
-
-/*span.color-name:hover {
- text-decoration: underline;
-}*/
 
 .beige {
   background: #E5DBC5;
@@ -862,20 +840,6 @@ span.color-name {
 
 .black-sabbath {
   background: #000000;
-}
-
-.chosen {
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.chosen span {
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.chosen div.color {
-  opacity: 1;
 }
 
 .sidebar__color .opener-down {

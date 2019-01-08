@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   min-width: 1205px;
   margin: 0 auto;
@@ -38,7 +40,6 @@ li a:hover {
   width: 1205px;
   margin: 0 auto;
 }
-
 .h2 {
   text-align: center;
   font-weight: bold;
@@ -46,6 +47,14 @@ li a:hover {
   text-transform: uppercase;
   color: #333333;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .arrow {
   position: absolute;
   height: 30px;
@@ -93,7 +102,7 @@ li a:hover {
   flex-direction: column;
   justify-content: space-between;
   min-height: 124px;
-  background: url(../img/header-waves.png) bottom center repeat-x, linear-gradient(93.68deg, #ebe5e9 5.29%, #d1e3e5 95.42%);
+  background: url(../img/header-waves.png) bottom center repeat-x, linear-gradient(93.68deg, #EBE5E9 5.29%, #D1E3E5 95.42%);
 }
 .header .header-main__wrapper {
   min-height: 139px;
@@ -192,8 +201,8 @@ li a:hover {
   text-align: center;
   color: #FFFFFF;
   border-radius: 50%;
-  background: linear-gradient(90deg, #ff65a5 1.11%, #ff8076 100%);
-  box-shadow: 0px 2px 8px rgba(255, 101, 165, 0.6), inset 0px 1px 1px #ff8076;
+  background: linear-gradient(90deg, #FF65A5 1.11%, #FF8076 100%);
+  box-shadow: 0px 2px 8px rgba(255, 101, 165, 0.6), inset 0px 1px 1px #FF8076;
 }
 .header .header-main__pic_basket_menu {
   display: none;
@@ -254,7 +263,7 @@ li a:hover {
 .header .header-main__hidden-panel {
   display: none;
   min-height: 70px;
-  background: url(../img/header-waves.png) bottom center repeat-x, linear-gradient(90deg, #ff65a5 0%, #ff8076 100.22%);
+  background: url(../img/header-waves.png) bottom center repeat-x, linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
   box-shadow: inset 0px 2px 2px rgba(41, 42, 58, 0.25);
 }
 .header .header-main__hidden-panel_visible {
@@ -288,7 +297,7 @@ li a:hover {
   text-decoration: underline;
 }
 .header .main-menu__item_active {
-  background-image: linear-gradient(90deg, #ff65a5 0%, #ff8076 100%);
+  background-image: linear-gradient(90deg, #FF65A5 0%, #FF8076 100%);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% 4px;
@@ -455,7 +464,7 @@ li a:hover {
   text-decoration: underline;
 }
 .new-deals__menu-item_active {
-  background-image: linear-gradient(90deg, #ff65a5 0%, #ff8076 100%);
+  background-image: linear-gradient(90deg, #FF65A5 0%, #FF8076 100%);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% 4px;
@@ -486,6 +495,12 @@ li a:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.new-deals__product.new-deals__product_stub {
+  width: 284px;
+  height: 186px;
+  border: none;
+  background: none;
+}
 .new-deals__product a {
   display: inline-block;
   height: 100%;
@@ -495,14 +510,14 @@ li a:hover {
   position: relative;
   width: 383px;
   height: 252px;
-  background-image: url(../img/new-deals__product_active.jpg);
+  background-size: contain;
 }
 .new-deals__product_first {
-  background-image: url(../img/new-deals__product_1.jpg);
+  background-size: contain;
   opacity: 0.6;
 }
 .new-deals__product_last {
-  background-image: url(../img/new-deals__product_2.jpg);
+  background-size: contain;
   opacity: 0.6;
 }
 .new-deals__product_favorite {
@@ -514,6 +529,11 @@ li a:hover {
   background-image: url(../img/new-deals__product_favorite.png);
   background-repeat: no-repeat;
 }
+
+.new-deals__product_favorite.favorite {
+  background-image: url(../img/new-deals__product_favorite_chosen.png);
+}
+
 .new-deals__product_favorite:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -670,7 +690,7 @@ li a:hover {
   left: 0;
   right: 0;
   height: 150px;
-  box-shadow: inset 0 -150px 150px -75px #ffffff, inset 0 -150px 150px -75px #ffffff;
+  box-shadow: inset 0 -150px 150px -75px #FFF, inset 0 -150px 150px -75px #FFF;
 }
 .about-us__text_button {
   position: absolute;
@@ -698,7 +718,7 @@ li a:hover {
   min-height: 92px;
   height: 1px;
   margin: 0 auto;
-  background: url(../img/footer-waves.png) top center repeat-x, linear-gradient(92.54deg, #ebe5e9 5.3%, #d1e3e5 95.53%);
+  background: url(../img/footer-waves.png) top center repeat-x, linear-gradient(92.54deg, #EBE5E9 5.3%, #D1E3E5 95.53%);
 }
 .subscribe__wrapper {
   display: flex;
@@ -984,7 +1004,7 @@ li a:hover {
   color: #000000;
   text-decoration: none;
   background: #FFFFFF;
-  box-shadow: 0px 2px 8px rgba(173, 71, 113, 0.6), inset 0px 1px 1px #ff8076;
+  box-shadow: 0px 2px 8px rgba(173, 71, 113, 0.6), inset 0px 1px 1px #FF8076;
   border-radius: 8px;
   border: none;
 }
@@ -1011,6 +1031,11 @@ li a:hover {
   height: 39px;
   background-color: #ffffff;
 }
+
+.product-list__pic img {
+  max-width: 100%;
+}
+
 .product-list__product {
   margin: 0 20px;
   font-weight: 300;
@@ -1036,62 +1061,50 @@ li a:hover {
   color: #ffffff;
   cursor: pointer;
 }
-.hidden {
-  visibility: hidden;
+
+
+/*Breadcrumbs*/
+.site-path {
+  width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 14px;
 }
-/* ~~~ Preloader ~~~ */
-.preloader_wrapper {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.8);
-  z-index: 100;
+
+.site-path__items {
+  display: flex;
+  padding-top: 20px;
 }
-.preloader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+.site-path__item {
+  list-style: none;
 }
-.preloader hr {
-  border: 0;
-  margin: 0;
-  width: 40%;
-  height: 40%;
-  position: absolute;
-  border-radius: 50%;
-  animation: spin 2s ease infinite;
+.site-path__item a {
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
 }
-.preloader :first-child {
-  background: #19A68C;
-  animation-delay: -1.5s;
+.site-path__item:not(:first-child)::before {
+  content: "\2000 \203a \2000";
 }
-.preloader :nth-child(2) {
-  background: #ff748b;
-  animation-delay: -1s;
-}
-.preloader :nth-child(3) {
-  background: #ffb676;
-  animation-delay: -0.5s;
-}
-.preloader :last-child {
-  background: #727e86;
-}
-@keyframes spin {
-  0%,
-  100% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(160%);
-  }
-  50% {
-    transform: translate(160%, 160%);
-  }
-  75% {
-    transform: translate(0, 160%);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

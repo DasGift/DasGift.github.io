@@ -9,7 +9,6 @@ function headerHiddenPanelProfileVisibility() {
         document.querySelector('.header-main__hidden-panel').classList.toggle('header-main__hidden-panel_visible');
         document.querySelector('.header-main__pic_profile_menu').classList.toggle('header-main__pic_profile_menu_is-active');
     }
-
 }
 
 function headerHiddenPanelBasketVisibility() {
@@ -22,7 +21,6 @@ function headerHiddenPanelBasketVisibility() {
         document.querySelector('.header-main__hidden-panel').classList.toggle('header-main__hidden-panel_visible');
         document.querySelector('.header-main__pic_basket_menu').classList.toggle('header-main__pic_basket_menu_is-active');
     }
-
 }
 
 let headerProfile = document.querySelector('.header-main__pic_profile');
