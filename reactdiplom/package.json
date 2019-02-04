@@ -2,9 +2,9 @@
   "name": "ra-bosa-noga",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://netology-code.github.io/ra-1-Avonavi232",
+  "homepage": "https://netology-code.github.io/my-react-diploma/",
   "dependencies": {
-    "gh-pages": "^2.0.0",
+    "gh-pages": "^1.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -12,8 +12,9 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "build": "react-scripts build"
   }
 }

@@ -1,287 +1,183 @@
-import React, {Component} from 'react';
-import {Switch, Route} from 'react-router-dom';
-import PropTypes from 'prop-types';
-
-import './css/normalize.css';
-import './css/font-awesome.min.css';
-import './css/style.css';
-import './css/style-catalogue.css';
-import './css/style-favorite.css';
-import './css/style-order.css';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './components/pages/HomePage';
-import CataloguePage from './components/pages/CataloguePage';
-import FavoritesPage from './components/pages/FavoritesPage';
-import ProductPage from './components/pages/ProductPage';
-import OrderPage from './components/pages/OrderPage';
-
-import {get, localStorageGetParsedPlugin, localStorageSetParsedPlugin} from "./utils/functions";
-
+import React, { Component } from 'react';
+import { Catalogue, Favorite, Footer, Header, Order, OrderEnd, MainPage, ProductCard } from './components';
+import './App.css';
+import { Router, Route } from 'react-router-dom';
+import dataLoader from "./components/Fetch/Fetch";
+import createHistory from 'history/createBrowserHistory';
+const history = createHistory({ basename: process.env.PUBLIC_URL });
 
 class App extends Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
+    this.state = {
+      productCartItems: null,
+      filters: null,
+      categories: null,
+      orderItems: null,
+      cartId: null,
+      orderDetails: null,
+      catalogueFilterParam: null,
+      catalogueParam: null
+    };
 
-		localStorageGetParsedPlugin();
-		localStorageSetParsedPlugin();
+    this.CarryedMainPage = this.bindProps(MainPage, {
+      categories: this.state.categories
+    });
 
-		this.api = 'https://api-neto.herokuapp.com/bosa-noga';
-		this.baseurl = 'https://api-neto.herokuapp.com/bosa-noga';
+    this.CarryedCatalogue = this.bindProps(Catalogue, {
+      categories: this.state.categories,
+      filters: this.state.filters,
+      filterParam: this.state.catalogueFilterParam,
+      catalogueParam: this.state.catalogueParam,
+      filterLoader: this.mainMenuFilterLoader
+    });
 
-		this.newApi = {
-			filters: () => `${this.baseurl}/filters`,
-			products: queryStr => `${this.baseurl}/products${queryStr ? `/?${queryStr}` : ''}`,
+    this.CarryedFavorite = this.bindProps(Favorite, {});
 
-			createCart: () => `${this.baseurl}/cart`,
-			getCart: id => `${this.baseurl}/cart/${id}`,
-			updateCart: id => `${this.baseurl}/cart/${id}`,
+    this.CarryedOrderEnd = this.bindProps(OrderEnd, {
+      orderDetails: this.state.orderDetails
+    });
 
-			order: () => `${this.baseurl}/order`
-		};
+    this.CarryedOrder = this.bindProps(Order, {
+      cartItems: this.state.orderItems,
+      cartId: this.state.cartId,
+      cartUploader: this.cartItemUploader,
+      orderDone: this.orderDoneLoader
+    });
 
-		this.overlookedStorageKey = 'bosanogaOverlooked';
-		this.favoriteStorageKey = 'bosanogaFavorite';
-		this.cartStorageKey = 'bosanogaCart';
+    this.CarryedProductCard = this.bindProps(ProductCard, {
+      cartUploader: this.cartItemUploader,
+      filterParam: this.state.catalogueFilterParam,
+      catalogueParam: this.state.catalogueParam,
+      filterLoader: this.mainMenuFilterLoader
+    });
+  };
 
-		this.state = {
-			fetching: false,
-			categories: [],
-			favorites: [],
-			cartId: undefined,
-			cart: []
-		};
-	}
+  componentDidMount() {
+    const filters = dataLoader('filters');
+    const categories = dataLoader('categories');
+    Promise.all([filters, categories]).then(([filters, categories]) => {
+      this.CarryedMainPage = this.bindProps(MainPage, {
+        categories: categories
+      });
 
-	componentDidMount() {
-		//Fetch categories
-		this.setState({fetching: true}, () => {
-			get(`${this.api}/categories`)
-					.then(({data}) => {
-						this.setState({
-							fetching: false,
-							categories: data,
-							favorites: localStorage.getParsed(this.favoriteStorageKey, [])
-						})
-					})
-		});
+      this.CarryedCatalogue = this.bindProps(Catalogue, {
+        categories: this.state.categories,
+        filters: filters,
+        filterParam: this.state.catalogueFilterParam,
+        catalogueParam: this.state.catalogueParam,
+        filterLoader: this.mainMenuFilterLoader
+      });
 
-		this._initCart();
-	}
+      this.setState({
+        categories: categories,
+        filters: filters
+      });
+    },
+      reason => {
+        console.log(reason)
+      });
+  };
 
-	getChildContext() {
-		return {
-			api: this.api,
-			newApi: this.newApi,
-			overlookedStorageKey: this.overlookedStorageKey,
-			favoriteStorageKey: this.favoriteStorageKey
-		}
-	}
+  orderLoader = (data) => {
+    if (data === null) {
+      this.setState({
+        orderItems: null
+      });
+      this.CarryedOrder = this.bindProps(Order, {
+        cartItems: null,
+        cartId: this.state.cartId,
+        cartUploader: this.cartItemUploader,
+        orderDone: this.orderDoneLoader
+      });
+    }
+    this.CarryedOrder = this.bindProps(Order, {
+      cartItems: data,
+      cartId: this.state.cartId,
+      cartUploader: this.cartItemUploader,
+      orderDone: this.orderDoneLoader
+    });
+    this.setState({
+      orderItems: data
+    });
+  };
 
-	handleFavoriteToggle = favoriteID => {
-		const favoritesLS = localStorage.getParsed(this.favoriteStorageKey, []);
+  orderDoneLoader = (param) => {
+    this.CarryedOrderEnd = this.bindProps(OrderEnd, {
+      orderDetails: param
+    });
+    this.setState({
+      orderDetails: param
+    });
+  };
 
-		let favorites;
+  cartItemUploader = (data) => {
+    if (data === null) {
+      this.setState({
+        productCartItems: null,
+        cartId: null
+      });
+    } else {
+      this.setState({
+        productCartItems: data,
+        cartId: data.id
+      });
+    }
+  };
 
-		if (favoritesLS.includes(favoriteID)) {
-			favorites = favoritesLS.filter(id => id !== favoriteID);
-		} else {
-			favorites = favoritesLS.concat([favoriteID]);
-		}
+  mainMenuFilterLoader = ({ activeCategory, type, name }) => (event) => {
+    const selectedCategoryId = `categoryId=${activeCategory.id}`;
+    const selectedType = type ? `&${type}` : '';
+    const selectedName = name ? `=${name}` : '';
+    const selectedCategories = selectedCategoryId + selectedType + selectedName;
+    const selectedCategoriesProps = { [type]: name };
+    this.CarryedCatalogue = this.bindProps(Catalogue, {
+      categories: this.state.categories,
+      filters: this.state.filters,
+      filterParam: selectedCategories,
+      catalogueParam: { activeCategory, selectedCategoriesProps },
+      filterLoader: this.mainMenuFilterLoader
+    });
+    this.setState({
+      catalogueFilterParam: selectedCategories,
+      catalogueParam: { activeCategory, selectedCategoriesProps }
+    });
+  };
 
-		localStorage.setParsed(this.favoriteStorageKey, favorites);
-		this.setState({favorites});
-	};
+  searchParamLoader = (searchValue) => {
+    const searchParam = `search=${searchValue}`;
+    this.CarryedCatalogue = this.bindProps(Catalogue, {
+      categories: this.state.categories,
+      filters: this.state.filters,
+      filterParam: searchParam,
+      catalogueParam: this.state.catalogueParam
+    });
+    this.setState({
+      filterParam: searchParam
+    });
+  };
 
-	_createNewCart = body => {
-		const {createCart} = this.newApi;
+  bindProps = (Component, bindingProps) => (selfProps) => <Component {...bindingProps}{...selfProps} />;
 
-		return fetch(createCart(), {
-			method: 'POST',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(body)
-		})
-				.then(responce => responce.json())
-				.then(responce => {
-					if (responce.status = 'ok') {
-						return new Promise(resolve => {
-							localStorage.setParsed(this.cartStorageKey, responce.data.id);
-							this.setState({
-								cartId: responce.data.id,
-								cart: [body],
-							}, () => resolve());
-						})
-					} else {
-						throw new Error('Create new cart error')
-					}
-				})
-	};
-
-	_initCart = () => {
-		const
-				{getCart} = this.newApi,
-				storageCartId = localStorage.getParsed(this.cartStorageKey, '');
-
-		//Если в ЛС сохранен ID корзины, то проверить его актуальность, отправив запрос
-		return new Promise(resolve => {
-			if (storageCartId) {
-				return fetch(getCart(storageCartId))
-						.then(responce => {
-							if (responce.status === 200) {
-								//Если ID корзины актуален
-								return responce.json()
-										.then(json => {
-											this.setState({
-												cartId: json.data.id,
-												cart: json.data.products
-											}, () => resolve());
-										});
-							} else {
-								resolve();
-							}
-						})
-			} else {
-				resolve();
-			}
-		})
-	};
-
-	_updateCart = body => {
-		const
-				{updateCart} = this.newApi,
-				{cartId} = this.state;
-
-		return new Promise((resolve, reject) => {
-			return fetch(updateCart(cartId), {
-				method: 'POST',
-				headers: {
-					'Accept': 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(body)
-			})
-					.then(responce => responce.json())
-					.then(responce => {
-						if (responce.status = 'ok') {
-							resolve();
-						} else {
-							reject(new Error('Update cart error'));
-						}
-					})
-		})
-	};
-
-	handleUpdateCart = product => {
-		const
-				{getCart} = this.newApi,
-				{cartId} = this.state;
-
-		if (cartId) {
-			return this._updateCart(product)
-					.then(() => fetch(getCart(cartId)))
-					.then(responce => {
-						if(responce.status === 404) {
-							this.setState({
-								cart: [],
-								cartId: undefined
-							})
-						} else {
-							responce.json()
-									.then(({data}) => this.setState({cart: data.products}));
-						}
-					});
-		} else {
-			return this._createNewCart(product);
-		}
-	};
-
-	render() {
-		const {fetching, categories, favorites, cart, cartId} = this.state;
-		return (
-				<div className="app container">
-					<Header
-							fetching={fetching}
-							categories={categories}
-							handleUpdateCart={this.handleUpdateCart}
-							cart={cart}
-					/>
-
-					<Switch>
-						<Route exact path="/" render={props =>
-								<HomePage
-										fetching={fetching}
-										categories={categories}
-										favorites={favorites}
-										handleFavoriteToggle={this.handleFavoriteToggle}
-										{...props}
-								/>
-						}/>
-
-						<Route
-								path="/products"
-								render={
-									props =>
-											categories.length ?
-													<CataloguePage
-															{...props}
-															categories={categories}
-															handleFavoriteToggle={this.handleFavoriteToggle}
-													/> :
-													<p>Loading</p>
-								}/>
-
-						<Route path="/product" render={props =>
-								<ProductPage
-										{...props}
-										handleUpdateCart={this.handleUpdateCart}
-								/>
-						}/>
-
-						<Route path="/favorites" render={props =>
-								<FavoritesPage
-										{...props}
-										handleFavoriteToggle={this.handleFavoriteToggle}
-										favorites={favorites}
-								/>}
-						/>
-
-						<Route path="/order" render={props =>
-							<OrderPage
-									{...props}
-									cart={cart}
-									cartId={cartId}
-									handleUpdateCart={this.handleUpdateCart}
-							/>}
-						/>
-					</Switch>
-
-					<Footer/>
-				</div>
-		);
-	}
-}
-
-App.childContextTypes = {
-	api: PropTypes.string.isRequired,
-	newApi: PropTypes.object.isRequired,
-	overlookedStorageKey: PropTypes.string.isRequired,
-	favoriteStorageKey: PropTypes.string.isRequired,
+  render() {
+    const { CarryedMainPage, CarryedCatalogue, CarryedFavorite, CarryedOrder, CarryedOrderEnd, CarryedProductCard } = this;
+    return (
+      <Router history={history}>
+        {(this.state.categories && this.state.filters) && <div className='container'>
+          <Header history={history} cart={this.state.productCartItems}
+            categories={this.state.categories} filters={this.state.filters} orderLoader={this.orderLoader}
+            filterLoader={this.mainMenuFilterLoader} search={this.searchParamLoader} />
+          <Route path='/' exact component={CarryedMainPage} />
+          <Route path='/catalogue/' exact component={CarryedCatalogue} />
+          <Route path='/favorite' exact component={CarryedFavorite} />
+          <Route path='/order' exact component={CarryedOrder} />
+          <Route path='/orderEnd' exact component={CarryedOrderEnd} />
+          <Route path='/productCard/:id' exact component={CarryedProductCard} />
+          <Footer />
+        </div>}
+      </Router>
+    );
+  };
 };
 
 export default App;
-
-/*
-* TODO:
-* Страница каталог:
-*   * подсветка выбранного фильтра
-*   * прелоадеры на загрузку любых частей контента
-*   * стартовая сортировка - по цене, а не по популярности
-*   * сброс фильтров проверить
-*   * поправить верстку дропдаунов в сайдбаре, где мало контента - серая область не по размеру
-*   * добавление в избранное
-*   * слайдер-блок "вы смотрели"
-* */
