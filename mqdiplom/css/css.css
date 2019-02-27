@@ -958,7 +958,7 @@ footer .footer-surface {
   .players-content.two,
   .players-content.three {
     padding-left: 15.9%;
-    padding-right: 30%;
+    padding-right: 10%;
   }
 
   .athlets-content.one .content,
@@ -1022,17 +1022,13 @@ footer .footer-surface {
     padding-right: 198px;
   }
 
-  .athlets-content.one .text-content:after {
-    content: " to view profile.";
-  }
-
   .athlets-content.two .text-content {
     padding-left: 15px;
   }
 
   .players-content .text-content {
     padding-left: 20px;
-    padding-right: 40%;
+    padding-right: 20%;
   }
 
   .players-content.one {
