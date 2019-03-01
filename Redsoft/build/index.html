@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8"><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <title> Главная страница
+    </title>
+    <link rel="stylesheet" href="static/css/index.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-nav">
+          <div class="logo"><img class="logo__img" src="static/images/logo.png" alt="logo"/>
+          </div>
+          <div class="location header-nav__location"><span class="location__title">Ваш регион:</span><span class="location__current">Москва</span></div>
+        </div>
+        <div class="header-info">
+          <div class="phone"><img class="phone__logo" src="static/images/icons/phone.png" alt="phone"/><a class="phone__number" href="tel:8(800)700-17-71">8(800)700-17-71	</a>
+          </div>
+          <div class="information-compare"><img class="information-compare__icon" src="static/images/icons/compare.png" alt="compare-icon"/><span class="information-compare__title">Сравнить</span>
+          </div>
+          <div class="information-login"><img class="information-login__icon" src="static/images/icons/account.png" alt="akk-icon"/><span class="information-login__title">Мой Аккаунт</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-item__link active" href="#">Туры</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Отели</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Авиабилеты</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Круизы</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Комбитуры</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Экскурсии</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Страны</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Виды отдыха</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Услуги</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Акции</a></li>
+          <li class="nav-item"><a class="nav-item__link" href="#">Как купить</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="content-panel">
+      <div class="container">
+        <div class="panel">
+          <div class="panel-country panel-block"><span class="content-panel__title panel-country__title">Выберите город, страну</span><img class="content-panel__icon panel__icon" src="static/images/icons/arrow-bottom.png" alt="arrow-bottom"/>
+          </div>
+          <div class="panel-arrival panel-block"><span class="content-panel__title panel-arrival__title">Заезд</span><img class="content-panel__icon panel-arrival__icon" src="static/images/icons/calendar.png" alt="calendar"/>
+          </div>
+          <div class="panel-nights panel-block"><span class="content-panel__title panel-nights__title">7 ночей</span><img class="content-panel__icon panel__icon" src="static/images/icons/arrow-bottom.png" alt="arrow-bottom"/>
+          </div>
+          <div class="panel-tourists panel-block">
+            <div class="tourists-block"><img class="content-panel__icon panel-tourists__icon" src="static/images/icons/men-active.png" alt="men-active"/><img class="content-panel__icon panel-tourists__icon" src="static/images/icons/men-unactive.png" alt="men-unactive"/><img class="content-panel__icon panel-tourists__icon" src="static/images/icons/child.png" alt="child"/><img class="content-panel__icon panel-tourists__icon" src="static/images/icons/child.png" alt="child"/>
+            </div><img class="content-panel__icon panel__icon" src="static/images/icons/arrow-bottom.png" alt="arrow-bottom"/>
+          </div>
+          <div class="panel-rooms panel-block"><span class="content-panel__title panel-rooms__title">1 номер</span><img class="content-panel__icon panel__icon" src="static/images/icons/arrow-bottom.png" alt="arrow-bottom"/>
+          </div>
+        </div>
+        <div class="panel-button">
+          <button class="panel-button__choice">Подобрать отель</button>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slider-block">
+          <div class="slider-nav"></div>
+          <div class="slider-item"><span class="slider-item__month">Январь</span><span class="slider-item__price">от 76 132 руб.</span><span class="slider-item__count">7 ночей</span></div>
+          <div class="slider-item"><span class="slider-item__month">Февраль</span><span class="slider-item__price">от 56 132 руб.</span><span class="slider-item__count">5 ночей</span></div>
+          <div class="slider-item slider-active"><span class="slider-item__month">Март</span><span class="slider-item__price">от 123 450 руб.</span><span class="slider-item__count">14 ночей</span></div>
+          <div class="slider-item"><span class="slider-item__month">Апрель</span><span class="slider-item__price">от 76 132 руб.</span><span class="slider-item__count">7 ночей</span></div>
+          <div class="slider-item"><span class="slider-item__month">Май</span><span class="slider-item__price">от 76 132 руб.</span><span class="slider-item__count">7 ночей</span></div>
+          <div class="slider-nav"></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-main">
+      <div class="container content-container">
+        <div class="content-filter">
+          <div class="filter-top filter-block"><img class="filter-top__icon" src="static/images/icons/filter.png"/><span class="filter-top__title">Смотреть выбранные фильтры</span>
+          </div>
+          <div class="filter-cost filter-block">
+            <div class="title-block"><span class="filter-block__title">Стоимость</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div>
+            <div class="filter-slider">
+              <input class="filter-slider__count" type="text" value="0">
+              <div class="filter-divide"></div>
+              <input class="filter-slider__count" type="text" value="545 000">
+            </div>
+            <div class="slider-field">
+              <div class="slider-scale">
+                <div class="slider-scale--left" id="slider-scale--left"></div>
+                <div id="slider-scale--right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Выбор отеля:</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div><span class="filter-hotel__title">Отели:</span>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Aqua Hotel Aquamarina &amp; Spa"><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div><span class="filter-hotel__title">Класс отеля:</span>
+            <div class="hotel-rate hotel-block"></div>
+            <div class="slider-field">
+              <div class="slider-scale">
+                <div class="slider-scale--left" id="slider-scale--left"></div>
+                <div id="slider-scale--right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Тип отеля:</span></div>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Городской отель (27 отелей)"><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Район</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Leopoldstadt (4 отеля)"><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Питание:</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Любое"><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Сервис</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Wi-Fi в отеле, Спортзал, Собстве..."><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div>
+          </div>
+          <div class="filter-hotel filter-block">
+            <div class="title-block"><span class="filter-block__title">Достпримечательности:</span><img class="filter-block__icon" src="static/images/icons/arrow-top.png"/>
+            </div>
+            <div class="hotel-list hotel-block">
+              <input class="filter-hotel__name" type="text" value="Центр города"><img class="hotel-list__icon" src="static/images/icons/arrow-bottom.png"/>
+            </div>
+          </div>
+          <div class="filter-bottom filter-block"><span class="filter-bottom__title">Применить поиск</span></div>
+          <div class="filter-sale">
+            <div class="sale-block"><span class="sale-block__title">Получить <br> лучшее предложение</span></div>
+            <div class="sale-block">
+              <input class="sale-block__mail" type="text" value="Ваш E-mail">
+            </div>
+            <div class="sale-block">
+              <input class="sale-block__send" type="checkbox" checked><span class="sale-block__agree">Я согласен с обработкой персональных данных</span>
+            </div>
+            <div class="sale-block">
+              <button class="sale-block__button panel-button__choice">Следить за ценой</button>
+            </div>
+          </div>
+        </div>
+        <div class="content-places">
+          <section class="content-vars">
+            <div class="content-variants"><a class="content-variants__title" href="#">Посмотрите все предложенные варианты на карте</a>
+              <button class="content-variants__button">Смотреть</button>
+            </div>
+            <div class="content-sort">
+              <ul class="sort sort-item">
+                <li class="sort-list"><a class="sort__link" href="#">Сортировать по:</a></li>
+                <li class="sort-list sort-by"><img class="sort__icon" src="static/images/icons/like.png" alt="sort-icon"/><a class="sort__link" href="#">Рекомендуемые</a>
+                </li>
+                <li class="sort-list"><img class="sort__icon" src="static/images/icons/price.png" alt="sort-icon"/><a class="sort__link" href="#">Цена</a>
+                </li>
+                <li class="sort-list"><img class="sort__icon" src="static/images/icons/star.png" alt="sort-icon"/><a class="sort__link" href="#">Звезды</a>
+                </li>
+                <li class="sort-list"><img class="sort__icon" src="static/images/icons/rating.png" alt="sort-icon"/><a class="sort__link" href="#">Рейтинг</a>
+                </li>
+                <li class="sort-list"><a class="sort__link" href="#">Показывать:</a><input class="sort-select" type="text" value="25">
+<img class="sort-select__icon" src="static/images/icons/arrow-bottom.png">
+                </li>
+              </ul>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Cala Font 4</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Praterstrasse 72, Центр Вены (4,7 км)</span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image2.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Iberostar Playa de Muro 3</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-hotel-unactive.png" alt="hotel-star-hotel-unactive"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Iberostar Playa de Muro </span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image3.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Cala Font 4</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Praterstrasse 72, Центр Вены (4,7 км)</span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image4.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Cala Font 4</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Praterstrasse 72, Центр Вены (4,7 км)</span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image5.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Cala Font 4</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Praterstrasse 72, Центр Вены (4,7 км)</span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-hotels hotels">
+              <div class="hotels-photo"><img class="hotels-photo__img" src="static/images/hotel-image6.jpg" alt="hotel-photo"/><span class="hotels-photo__info">Мало мест</span>
+              </div>
+              <div class="hotels-info">
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__title">Cala Font 4</span><img class="info-hotel__star" src="static/images/icons/hotel-name-star.png" alt="hotel-star"/>
+                  </div>
+                  <div class="hotels-wrapper"><img class="info-hotel__pay" src="static/images/visa.png" alt="hotel-pay"/>
+                  </div>
+                </div>
+                <div class="info-hotel hotels-star">
+                  <div class="hotels-wrapper"><span class="info-hotel__rating">Оценка 8,7 из 10</span><a class="info-hotel__feedback" href="#">(89 отзывов)</a></div>
+                  <div class="hotels-wrapper hotels-rate"><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/><img class="info-hotel__rate" src="static/images/icons/star-rating-active.png" alt="hotel-star-rating-active"/>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__place" src="static/images/icons/hotel-place.png" alt="hotel-place"/><span class="info-hotel__adresse">Praterstrasse 72, Центр Вены (4,7 км)</span>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__oldPrice">155 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><img class="info-hotel__nosmoking info-hotel__sales" src="static/images/icons/nosmoking.png" alt="nosmoking"/><img class="info-hotel__food info-hotel__sales" src="static/images/icons/food.png" alt="food"/><img class="info-hotel__pawprint info-hotel__sales" src="static/images/icons/pawprint.png" alt="pawprint"/><img class="info-hotel__wifi info-hotel__sales" src="static/images/icons/wifi.png" alt="wifi"/>
+                  </div>
+                  <div class="hotels-wrapper"><span class="info-hotel__newPrice">от 125 000 р.</span></div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__nights">7 ночей</span><span class="info-hotel__number">Аппартаменты</span></div>
+                  <div class="hotels-wrapper">
+                    <button class="info-hotel__button sale-block__button panel-button__choice">Выбрать</button>
+                  </div>
+                </div>
+                <div class="info-hotel">
+                  <div class="hotels-wrapper"><span class="info-hotel__gasts">2 ADL</span><span class="info-hotel__food">RO</span></div>
+                  <div class="hotels-wrapper">
+                    <input class="info-hotel__check" type="checkbox" id="info-hotel__check">
+                    <label class="info-hotel__compare" for="info-hotel__check">Сравнить отель</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-pagination pagination">
+              <div class="pagination-block"><a class="pagination-block__text pagination-block__title" href="#">Страница:</a><span class="pagination-block__text pagination-block__number">1</span><span class="pagination-block__text pagination-block__number pagination-block__active">2</span><span class="pagination-block__text pagination-block__number">3</span><span class="pagination-block__text pagination-block__number">4</span><span class="pagination-block__text pagination-block__number">...</span><span class="pagination-block__text pagination-block__number">52</span><a class="pagination-block__text pagination-block__title" href="#">Следующая</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="container footer-content">
+        <div class="footer-logos">
+          <div class="logos logos-icon"><img class="logos-icon__logo" src="static/images/logo-black.png" alt="footer-logo"/>
+          </div>
+          <div class="logos logos-copy"><span class="logos-copy__copyright">® 2017 Natalie tours</span></div>
+          <div class="logos logos-social"><img class="logos-social__icons footer-vk" src="static/images/icons/vk.png" alt="footer-vk"/><img class="logos-social__icons footer-fb" src="static/images/icons/fb.png" alt="footer-fb"/><img class="logos-social__icons footer-insta" src="static/images/icons/insta.png" alt="footer-insta"/>
+          </div>
+          <div class="logos logos-develop"><img class="logos-develop__icon" src="static/images/site.png" alt="logos-develop__icon"/>
+            <div class="logos-authors"><span class="logos-develop__text">Разработка сайта</span><span class="logos-develop__text">Redsoft</span></div>
+          </div>
+        </div>
+        <div class="footer-about">
+          <nav class="menu"><span class="menu-title">О компании</span>
+            <ul class="menu-list">
+              <li class="menu-item"><a class="menu-item__link" href="#">Компания «Натали Турс»</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Новости</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Вакансии</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Отзывы</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">MICE</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Агентствам</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Франчайзинг</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-direction">
+          <nav class="menu"><span class="menu-title">Направления</span>
+            <ul class="menu-list">
+              <li class="menu-item"><a class="menu-item__link" href="#">Пляжный отдых</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Экскурсионные туры</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Отдых с детьми</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Туры в Азию</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Морские круизы</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Комби туры</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Парки развлечений</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-info">
+          <nav class="menu"><span class="menu-title">Полезная информация</span>
+            <ul class="menu-list">
+              <li class="menu-item"><a class="menu-item__link" href="#">Проверить свой тур</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Визы</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Страховка</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Трансфер</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Помощь на отдыхе</a></li>
+              <li class="menu-item"><a class="menu-item__link" href="#">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/index.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  </body>
+</html>
