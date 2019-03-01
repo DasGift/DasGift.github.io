@@ -7,3 +7,4 @@
 5. https://dasgift.github.io/JS%20in%20browser%20diplom/index.html
 6. https://dasgift.github.io/reactdiplom/layout/index.html
 7. https://dasgift.github.io/Redsoft/index.html
+8. https://dasgift.github.io/mqdiplom/index.html
