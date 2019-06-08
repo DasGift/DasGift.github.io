@@ -1,0 +1,143 @@
+.lk-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.top-menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #6363fb;
+    padding: 5px 10px;
+}
+
+.menu-icon {
+    color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.lk-title {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Arial';
+}
+
+.lk-logout {
+    position: absolute;
+    right: 15px;
+    color: #ffffff;
+}
+
+.main-block {
+    display: flex;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-block-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-block {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.block-count {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu {
+    display: none;
+    width: 20%;
+    border-right: 1px solid #6363fb;
+}
+
+.menu-list {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #80808033;
+}
+
+.menu-item {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-link {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: #808080;
+}
+
+.driver-list {
+    display: none;
+}
+
+.driver-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.driver-item:hover {
+    background-color: #c2c2c2;
+}
+
+.driver-name {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.driver-cart-block {
+    display: flex;
+    width: 655px;
+    flex-direction: row;
+}
+
+.driver-cart {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.driver-cart-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cart-title {
+    font-weight: bold;
+}

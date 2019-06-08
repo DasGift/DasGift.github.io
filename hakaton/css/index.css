@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrap-align {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.reg-input {
+    width: 250px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.reg-block {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
+    margin: 0 auto 15px;
+    padding: 5px;
+}
+
+.button {
+    width: 150px;
+    margin: 0 auto;
+}

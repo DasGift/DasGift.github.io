@@ -1,0 +1,17 @@
+.auth-wrapper {
+    width: 450px;
+    height: 200px;
+}
+
+.auth-block {
+    width: 300px;
+    margin: 0 auto 5px;
+}
+
+.reg-input {
+    width: 215px;
+}
+
+.reg-title {
+    margin-top: 0;
+}
