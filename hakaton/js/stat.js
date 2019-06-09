@@ -8,7 +8,7 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'Сезонность к выручке',
+        title: 'Сезонность к  выручке',
         hAxis: {title: 'Сезоны',  titleTextStyle: {color: '#333'}},
         vAxis: {minValue: 0}
     };
