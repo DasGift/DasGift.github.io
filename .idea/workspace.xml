@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7005829a-2285-455a-a3f1-4dc9ebc45c7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/hakaton/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton/js/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hakaton/js/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -144,12 +143,12 @@
       <updated>1560002986085</updated>
       <workItem from="1560002989133" duration="783000" />
       <workItem from="1560012103590" duration="4763000" />
-      <workItem from="1560046710342" duration="18646000" />
+      <workItem from="1560046710342" duration="18963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24192000" />
+    <option name="totallyTimeSpent" value="24509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -283,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hakaton/js/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
