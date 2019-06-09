@@ -8,3 +8,4 @@
 6. https://dasgift.github.io/reactdiplom/layout/index.html
 7. https://dasgift.github.io/Redsoft/index.html
 8. https://dasgift.github.io/mqdiplom/index.html
+9. https://dasgift.github.io/hakaton/lk.html
