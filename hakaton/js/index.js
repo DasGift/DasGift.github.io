@@ -59,5 +59,15 @@ const closeBlock = () => {
 
 closeBlock();
 
+const logout = () => {
+    let logout = document.getElementById('lk-logout');
+
+    logout.onclick = function() {
+        document.location.assign('file:///C:/Frontend/DasGift.github.io/hakaton/authorization.html');
+    }
+};
+
+logout();
+
 
 

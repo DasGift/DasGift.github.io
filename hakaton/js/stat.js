@@ -1,10 +1,10 @@
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Сезоны', 'Выручка'],
-        ['Весна',   600],
-        ['Лето',    560],
-        ['Осень',   620],
-        ['Зима',    640]
+        ['Весна',   28300],
+        ['Лето',    24200],
+        ['Осень',   26100],
+        ['Зима',    29500]
     ]);
 
     var options = {
@@ -15,12 +15,12 @@ function drawChart() {
 
     var route = google.visualization.arrayToDataTable([
         ['Время', 'Выручка'],
-        ['08:00',   1200],
-        ['10:00',    960],
-        ['12:00',    620],
-        ['16:00',    840],
-        ['18:00',    1240],
-        ['22:00',    440],
+        ['08:00',    70],
+        ['10:00',    45],
+        ['12:00',    40],
+        ['16:00',    55],
+        ['18:00',   120],
+        ['22:00',    20],
     ]);
 
     var routeOptions = {
@@ -47,16 +47,26 @@ function drawChart() {
         series: {5: {type: 'line'}}
     };
 
+    // var data4 = google.visualization.arrayToDataTable([
+    //     ['Lat', 'Long', 'Name'],
+    //     [37.4232, -122.0853, 'Work'],
+    //     [37.4289, -122.1697, 'University'],
+    //     [37.6153, -122.3900, 'Airport'],
+    //     [37.4422, -122.1731, 'Shopping']
+    // ]);
 
     var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
     var chart2 = new google.visualization.AreaChart(document.getElementById('chart_div2'));
     var chart3 = new google.visualization.ComboChart(document.getElementById('chart_div3'));
+    var map = new google.visualization.Map(document.getElementById('map_div'));
+
     chart.draw(data, options);
     chart2.draw(route, routeOptions);
     chart3.draw(data3, options3);
-};
 
-// function drawVisualization() {
-//     // Some raw data (not necessarily accurate)
-//
-// }
+    // map.draw(data4, {
+    //     showTooltip: true,
+    //     showInfoWindow: true
+    // });
+
+};
