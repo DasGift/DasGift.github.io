@@ -63,7 +63,7 @@ const logout = () => {
     let logout = document.getElementById('lk-logout');
 
     logout.onclick = function() {
-        document.location.assign('file:///C:/Frontend/DasGift.github.io/hakaton/authorization.html');
+        document.location.assign('https://dasgift.github.io/hakaton/authorization.html');
     }
 };
 
