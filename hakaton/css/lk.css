@@ -190,3 +190,18 @@
     right: 0;
     cursor: pointer;
 }
+
+.delete-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-button {
+    background-color: red;
+    border: none;
+    padding: 15px;
+    border-radius: 35px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
