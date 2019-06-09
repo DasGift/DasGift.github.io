@@ -33,3 +33,29 @@ const hideDrivers = () => {
 
 hideDrivers();
 
+const addDriver = () => {
+    let addDriver = document.getElementById('add-driver');
+    let overlay = document.getElementById('overlay');
+    let addBlock = document.getElementById('add-cart-block');
+
+    addDriver.onclick = function() {
+        overlay.style.display = 'block';
+        addBlock.style.display = 'flex';
+    }
+};
+
+addDriver();
+
+const closeBlock = () => {
+    let closeBlock = document.getElementById('close-block');
+    let overlay = document.getElementById('overlay');
+    let addBlock = document.getElementById('add-cart-block');
+
+    closeBlock.onclick = function() {
+        overlay.style.display = 'none';
+        addBlock.style.display = 'none';
+    }
+};
+
+closeBlock();
+

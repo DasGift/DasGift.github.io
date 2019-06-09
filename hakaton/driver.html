@@ -52,6 +52,7 @@
             <li class="menu-item" id="drivers">
                 <i class="fa fa-user"></i>
                 <a href="#" class="menu-link">Водители</a>
+                <i class="fa fa-plus add-driver" id="add-driver"></i>
 
                 <ul class="driver-list" id="driver-list">
                     <li class="driver-item">
@@ -88,6 +89,30 @@
                 <a href="#" class="menu-link">FAQ</a>
             </li>
         </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="add-block" id="add-block">
+        <div class="info-block driver-cart-block add-cart-block" id="add-cart-block">
+            <i class="fa fa-times close-block" id="close-block"></i>
+            <h1 class="add-title">Добавить нового водителя</h1>
+            <div class="add-wrapper">
+                <div class="driver-cart driver-cart-title">
+                    <label class="cart-title" for="surname">Фамилия:</label>
+                    <label class="cart-title" for="name">Имя:</label>
+                    <label class="cart-title" for="patronymic">Отчество:</label>
+                    <label class="cart-title" for="drive-experience">Стаж вождения:</label>
+                    <label class="cart-title" for="driver-number">Номер работника</label>
+                </div>
+                <div class="driver-cart">
+                    <input type="text" class="surname add-input" id="surname">
+                    <input type="text" class="name add-input" id="name">
+                    <input type="text" class="patronymic add-input" id="patronymic">
+                    <input type="text" class="drive-experience add-input" id="drive-experience">
+                    <input type="text" class="count-day add-input" id="driver-number"">
+                </div>
+            </div>
+            <button>Добавить</button>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="js/index.js"></script>
