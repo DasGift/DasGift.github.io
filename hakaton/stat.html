@@ -3,10 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/lk.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Личный кабинет</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/stat.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+    <title>Статистика</title>
 </head>
 <body>
 <div class="lk-wrapper">
@@ -15,33 +26,6 @@
         <h1 class="lk-title">Личный кабинет</h1>
         <a href="#" class="lk-logout">Выйти</a>
     </header>
-    <div class="main-block">
-        <div class="main-block-row">
-            <div class="info-block driver-cart-block">
-                <div class="driver-cart driver-cart-title">
-                    <span class="cart-title">Фамилия:</span>
-                    <span class="cart-title">Имя:</span>
-                    <span class="cart-title">Отчество:</span>
-                    <span class="cart-title">Стаж вождения:</span>
-                    <span class="cart-title">Количество рейсов за сегодняшний день:</span>
-                    <span class="cart-title">Количество рейсов за неделю:</span>
-                    <span class="cart-title">В нашей компании:</span>
-                </div>
-                <div class="driver-cart">
-                    <span class="surname" id="surname">Иванов</span>
-                    <span class="name" id="name">Иван</span>
-                    <span class="patronymic" id="patronymic">Иванович</span>
-                    <span class="drive-experience" id="drive-experience">30 лет</span>
-                    <span class="count-day" id="count-day">4</span>
-                    <span class="count-week" id="count-week">40</span>
-                    <span class="in-company" id="in-company">15 лет</span>
-                </div>
-            </div>
-        </div>
-        <div class="delete-block">
-            <button class="delete-button">Удалить водителя</button>
-        </div>
-    </div>
     <div class="menu" id="menu">
         <ul class="menu-list">
             <li class="menu-item">
@@ -117,7 +101,9 @@
             <button>Добавить</button>
         </div>
     </div>
+    <div id="chart_div" style="display: inline-block; position: absolute; width: 50%; height: 500px; top: 10%; right: 20%"></div>
 </div>
+
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
