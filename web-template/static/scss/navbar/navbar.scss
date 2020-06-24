@@ -1,8 +1,37 @@
 .navbar {
-  padding-top: 0;
+  padding: 0;
 
   .container-block {
-    align-items: flex-start;
+    align-items: center;
     margin-top: 28px;
+    padding: 0 120px;
+  }
+}
+
+.nav {
+  &-menu {
+    width: 500px;
+    max-width: 500px;
+  }
+
+  &-auth {
+    background: #E7EAFB;
+    border-radius: 4px;
+
+    &__button {
+      display: block;
+      color: #475FEF;
+      //font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 12px 36px;
+
+      &:hover {
+        color: #475FEF;
+        text-decoration: none;
+      }
+    }
   }
 }
