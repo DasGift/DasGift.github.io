@@ -11,11 +11,27 @@ html(lang="ru-RU")
         <!--[if lt IE 9]>
         script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
         <![endif]-->
-        link(rel='stylesheet', href='static/css/index.css')
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
+        link(rel='stylesheet', href='static/css/index.css')
     body
-        .container-fluid
-            nav.navbar.navbar-light
-                img(src="static/images/logo.svg")
+        nav.navbar.navbar-light
+            .container-fluid
+                .nav-logo
+                    img(src="static/images/logo.svg")
+                .nav-menu-block
+                    ul.nav-menu
+                        li.nav-item
+                            a(href="#").nav-link Home
+                        li.nav-item
+                            a(href="#").nav-link About us
+                        li.nav-item
+                            a(href="#").nav-link Service
+                        li.nav-item
+                            a(href="#").nav-link Prices
+                        li.nav-item
+                            a(href="#").nav-link Blog
+                .nav-auth
+                    a(href="#").nav-auth__button Sign in
+
 
         script(src="static/js/index.js")
