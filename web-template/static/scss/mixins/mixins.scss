@@ -5,3 +5,11 @@
   font-size: 56px;
   line-height: 64px;
 }
+
+@mixin block-descr {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
