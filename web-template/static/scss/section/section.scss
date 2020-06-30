@@ -16,6 +16,11 @@
     &__descr {
       @include block-descr;
       color: #54586A;
+      margin-bottom: 0;
+    }
+
+    &__button {
+      margin-top: 40px;
     }
   }
 }

@@ -1,2 +1,19 @@
 @import "mixins/mixins";
 @import "fonts";
+
+.button {
+  border-radius: 4px 0 0 4px;
+
+  &-primary {
+    background: #475FEF;
+    color: #FFFFFF;
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    padding: 16px 24px;
+  }
+}
