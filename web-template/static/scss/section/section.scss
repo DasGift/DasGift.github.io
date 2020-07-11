@@ -20,6 +20,9 @@
     }
 
     &__button {
+      display: flex;
+      position: relative;
+      flex-direction: row;
       margin-top: 40px;
     }
   }
