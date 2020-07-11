@@ -1,4 +1,5 @@
 .section {
+  margin-bottom: 200px;
 
   &-block {
     display: flex;
@@ -24,6 +25,10 @@
       position: relative;
       flex-direction: row;
       margin-top: 40px;
+    }
+
+    &__phone {
+      margin-top: 67px;
     }
   }
 }
