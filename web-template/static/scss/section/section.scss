@@ -1,3 +1,6 @@
+@import "main";
+@import "secure";
+
 .section {
   margin-bottom: 200px;
 
@@ -11,7 +14,6 @@
 
     &__title {
       @include block-title;
-      color: #1D233A;
     }
 
     &__descr {

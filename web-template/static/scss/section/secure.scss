@@ -1,0 +1,12 @@
+.secure {
+  background: #13182A;
+
+  &-block {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      color: #FFFFFF;
+    }
+  }
+}
