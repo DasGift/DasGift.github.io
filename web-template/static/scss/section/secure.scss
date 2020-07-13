@@ -4,9 +4,34 @@
   &-block {
     display: flex;
     flex-direction: row;
+    margin-top: 129px;
 
     &__title {
       color: #FFFFFF;
+      margin-bottom: 22px;
+    }
+
+    &__image {
+      margin-right: 180px;
+    }
+
+    &__list {
+      padding-left: 23px;
+    }
+
+    &__item {
+      @include block-descr;
+      list-style-image: url("../images/check.svg");
+      color: #CBCBCD;
+      margin-bottom: 14px;
+    }
+
+    &__download {
+      margin-top: 40px;
+
+      img {
+        margin-right: 35px;
+      }
     }
   }
 }
