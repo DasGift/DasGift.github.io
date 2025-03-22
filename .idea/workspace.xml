@@ -23,7 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7005829a-2285-455a-a3f1-4dc9ebc45c7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ladyxxx/build/static/css/main.32112035.css" beforeDir="false" afterPath="$PROJECT_DIR$/ladyxxx/build/static/css/main.32112035.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ladyxxx/build/static/media/foto.5e81cad01a5c84413cfb.png" beforeDir="false" afterPath="$PROJECT_DIR$/ladyxxx/build/foto.5e81cad01a5c84413cfb.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +84,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Frontend\Develop\DasGift.github.io\ladyxxx" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Frontend\Develop\DasGift.github.io\ladyxxx\build" />
+      <recent name="D:\Frontend\Develop\DasGift.github.io\ladyxxx\build\static" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -106,7 +113,7 @@
       <workItem from="1592952246612" duration="291000" />
       <workItem from="1742645155816" duration="303000" />
       <workItem from="1742647092481" duration="325000" />
-      <workItem from="1742647493777" duration="369000" />
+      <workItem from="1742647493777" duration="1544000" />
     </task>
     <servers />
   </component>
